@@ -1,0 +1,682 @@
+openapi: "3.0.0"
+info:
+  #version: 1.0.0
+  title: Magnolia Delivery Endpoints API
+  description: |
+    This illustrates the key aspects of getting content from Delivery Endpoints.
+    
+    In Magnolia, you create your own endpoints via configuration to match your needs.
+
+    We provide the output of two example content types: `Tours` and `Pages`. 
+
+    ### Tours 
+
+    An example of working with a standard Magnolia content type.\
+    We use `tours` as a concrete example here, but the format will apply to any delivery endpoint that you create.
+
+    The `tours` collection has the following extra properties:
+    * name
+    * location
+    * author
+    * body
+    * duration
+    * image
+    * tourTypes
+    * destinations
+
+    ### Pages 
+      
+    An endpoint that returns Pages from the `website` workspace - an important special case.\
+    A `Page` has a heirarchy of `Areas` and `Components`, so the endpoint returns a tree. 
+    Different properties will be returned on each node, depending on the dialog associated with the page template or component template.
+    
+  # license:
+  #   name: MIT
+servers:
+  - url: http://localhost:8080/magnoliaAuthor/.rest/delivery
+
+
+
+
+
+
+
+
+
+paths:
+
+
+  /tours:
+    get:
+      summary: List tours (Query nodes)
+      description: &queryNodeDescription | 
+        If no `orderBy` parameter is used, the order of the results is unknown.\
+        It probably will not be the same order of the items seen by users in the AdminCentral Magnolia UI.
+
+      operationId: listTours
+      tags:
+        - 'Tours Endpoint'
+
+      parameters: &queryNodeParameters
+        - name: lang
+          in: query
+          description: >
+            In which language to return the content. By default, returns the language based on ` Accept-Language ` header.
+            Takes the language code (i.e. `de`, `de-DE`), or `all` to return all content.
+          required: false
+          schema:
+            type: string
+
+        - name: limit
+          in: query
+          description: How many tours to return at one time (Default can be specified in endpoint configuration)
+          required: false
+          schema:
+            type: integer
+            format: int32
+              
+        - name: offset
+          in: query
+          description: The start position in a result list. For pagination. (Default is 0)
+          required: false
+          schema:
+            type: integer
+            format: int32
+
+        - name: orderBy
+          in: query
+          description: |
+            The properties by which to order the nodes. 
+            The result may be returned either in the ascending ( asc ) order or in the descending ( desc ) order. 
+            The ascending order is applied if the direction is not set.\
+            Example: `mgnl:lastModified desc,title asc`
+          required: false
+          schema:
+            type: string
+
+        - name: q
+          in: query
+          description: A search phrase (full-text search).
+          required: false
+          schema:
+            type: string
+                        
+        - name: <filter>
+          in: query
+          description: |
+            queryNodes provides a filtering mechanism. Filters are added as request parameters. 
+            Filter values must be properly URL-encoded. 
+            You can use multiple filters within the same request.
+
+            ### Filter format
+            
+            The filter parameter has the following format:`property[operator]=value`\
+            Example: `name[like]=%25Families%25`\
+            Example:\
+            http://localhost:8080/magnoliaAuthor/.rest/delivery/tours?name[like]=%25Families%25&duration=7
+            
+            | Operator | Meaning |
+            |----------|---------|
+            | eq  | = |
+            | ne  | <> |
+            | gt  | > |
+            | lt | < |
+            | lte | <= |
+            | gte | >= |
+            | in | IN |
+            | not-in  | NOT IN |
+            | like | LIKE |
+            | null | NULL |
+
+            Filters are __case-sensitive__.
+
+            For `in` and `not-in`:\
+            Tilde `~` is the range symbol. Example: `price[in]=100~200`.
+            
+            For `like`:\
+            `%` is a wildcard for 0 or more characters.\ 
+            `_` is a wildcard for 1 character.  
+
+            For filtering by __date__ and __time__:\
+            only two ISO 8601-based formats are accepted. 
+            The patterns shown are in JAVA notation.\
+            Date:  `yyyy-MM-dd` (Example: 2018-01-01)\ 
+            Datetime:   `yyyy-MM-dd'T'HH:mm:ss.SSSXXX` (Example 2018-01-11T10:26:47.438+07:00)
+
+            For filtering within a __language__:\
+            Keep in mind that properties in the default language have no suffix, 
+            while properties in other languages are suffixed with the language code.
+            Consider the 'travel demo', where English is the default language, 
+            you could actually have 3 properties: `body`, `body_de`, `body_fr`.\
+            In your query you need to specify the actual property name you want to filter.\
+            Examples: `body[like]=%Experience%` and `body_de[like]=%Erleben%`
+            
+            
+            If a filter can take __multiple possible values__ , use `|` (OR):\
+            Example: `@name=travel|about`
+
+
+            ### Special filter properties
+            You can filter on additional special properties that you don't see in the endpoint response.
+
+            `@jcr:uuid` filter\
+            Filter by the JCR node ID (uuid). The property value must be an exact match.
+
+            `@ancestor` filter\
+            Find nodes for which the path provided is the ancestor. 
+            The path must be absolute in the given workspace of the given workspace prefix.
+            Example: `@ancestor=/travel/about/careers/marketing-associate`
+
+          required: false
+          schema:
+            type: string
+
+
+
+
+
+      responses:
+        '200':
+          description: An array of tours
+          # headers:
+
+          content:
+            application/json:    
+              schema:
+                $ref: "#/components/schemas/Tours"
+        default:
+          description: Unexpected Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+
+
+
+  /tours/{tourPath}[@nodes]:
+
+    get:
+      summary: Get a tour (Read node)
+      description: &readNodeDescription |
+        This API will return child nodes in their 'natural order', 
+        the same order that users give items in the AdminCentral Magnolia UI.\
+        (With the 'Query nodes' API, the array of responses may not be in their 'natural order' )
+        
+        To get _only the children_ of the item specified with the path, append `@nodes` to the end of the query.
+        (This is called the 'Get children' API in the full documentation.)
+
+        Note: To get an item by its `id` or other property you can use a query as described above in the 'Query nodes' API.
+      
+      
+      operationId: showTourByPath
+      tags:
+        - 'Tours Endpoint'
+
+      parameters: &readNodeParameters
+        - name: path
+          in: path
+          required: true
+          description: | 
+            The path of the page to retreive.
+            Example: `/magnolia-travels/A-Taste-of-Malaysia`.
+          schema:
+            type: string
+        
+
+      responses:
+        '200':
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tour"
+        default:
+          description: Unexpected Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+
+  /pages:
+    get:
+      summary: List pages (Query nodes)
+      description: *queryNodeDescription
+      operationId: listPages
+      tags:
+        - 'Pages Endpoint'
+
+      parameters:
+        *queryNodeParameters
+
+      responses:
+        '200':
+          description: An array of pages
+          # headers:
+
+          content:
+            application/json:    
+              schema:
+                $ref: "#/components/schemas/Pages"
+        default:
+          description: Unexpected Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+
+
+
+  /pages/{pagePath}[@nodes]:
+    get:
+      summary: Get a page (Read node)
+      description: *readNodeDescription
+      
+      operationId: showPageByPath
+      tags:
+        - 'Pages Endpoint'
+      parameters: 
+        *readNodeParameters
+
+      responses:
+        '200':
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Page"
+        default:
+          description: Unexpected Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+components:
+  schemas:
+    
+    
+    Page:
+      description: TRY THIS.
+      type: object
+      properties:
+        '@id':
+          type: string 
+          format: (UUID)
+          example: a358f3ad-5a03-4f5d-b0ab-cb2219100472
+        '@path':
+          type: string 
+          description: Full path of item in the JCR workspace.      
+          example: "/magnolia-travels/A-Taste-of-Malaysia"
+        '@name':
+          type: string 
+          example: "A-Taste-of-Malaysia"
+        '@nodeType':
+          type: string 
+          description: JCR nodeType, such as 'mgnl:content' or 'mgnl:page'.
+          example: mgnl:page
+        '@nodes':
+          type: array 
+          description: An array of the name of all of the child nodes of this item. It is the way to get an ordered list of the child nodes.
+        
+        'mgnl:tags':
+          type: array 
+          description: An array of strings of the tag names.
+        'mgnl:created':
+          type: date 
+          description: Date of node creation.
+          example: '2015-07-01T08:50:23.426Z'
+        'mgnl:createdBy':
+          type: string 
+          description: ID of user who created item.
+          example: superuser
+        'mgnl:lastModified':
+          type: date 
+          description: Date of last modification. 
+          example: '2015-07-01T08:50:23.426Z'
+        'mgnl:lastModifiedBy':
+          type: string 
+          description: ID of user who most recently modified the item.
+          example: superuser
+        'mgnl:lastActivated':
+          type: date 
+          description: Date of last activation. (aka:publication)  
+          example: '2015-07-01T08:50:23.426Z' 
+        'mgnl:lastActivatedBy':
+          type: string 
+          description: ID of user who most recently activated the item.
+          example: superuser
+       
+        'mgnl:template':
+            type: string
+            description: Which template the component has.
+            example: 'react-minimal-lm:pages/basic'
+
+        main:
+          type: object
+          $ref: "#/components/schemas/Area"
+        
+        extras:
+          type: object
+          $ref: "#/components/schemas/Area"
+
+
+    Pages:
+      type: object
+      properties:
+        results:
+          type: array
+          items:
+            $ref: "#/components/schemas/Page"
+
+
+    Area:
+      description: The container for `components`
+      type: object
+      properties: 
+        "All the usual '@' and 'mgnl:' properties":
+            type: string  
+        '@nodeType':
+          type: string 
+          description: JCR nodeType
+          example: mgnl:area
+        '@nodes':
+          type: array 
+          example: ['02', '00', '0', '01']
+          description: |
+            An array of the name of all of the child nodes of this item,
+            in __This case__, each node is a `component`. 
+            It is the way to get an ordered list of the child nodes.
+        '0':
+          type: object
+          $ref: "#/components/schemas/Component"
+          description: The first component.
+        '00':
+          type: object
+          description: The second component.
+          $ref: "#/components/schemas/Component"
+        '01':
+          type: object
+          description: The third component.
+          $ref: "#/components/schemas/Component"
+        '02':
+          type: object
+          description: The fourth component.
+          $ref: "#/components/schemas/Component"
+        
+
+
+
+    Component:
+      description: |
+        A component that an Content Author placed in an `Area` on a `Page`.\
+        Note: A component can also have one or more `Areas` with child components themselves. (Building a 'tree'.)
+      type: object
+      properties: 
+        "All the usual '@' and 'mgnl:' properties":
+            type: string  
+        '@nodeType':
+          type: string 
+          description: JCR nodeType
+          example: mgnl:component
+        'mgnl:template':
+            type: string
+            description: Which template the component has.
+            example: 'spa-lm:components/expander'
+        
+
+    Tour:
+      description: TRY THIS.
+      type: object
+      properties:
+        '@id':
+          type: string 
+          format: (UUID)
+          example: a358f3ad-5a03-4f5d-b0ab-cb2219100472
+        '@path':
+          type: string 
+          description: Full path of item in the JCR workspace.      
+          example: "/magnolia-travels/A-Taste-of-Malaysia"
+        '@name':
+          type: string 
+          example: "A-Taste-of-Malaysia"
+        '@nodeType':
+          type: string 
+          description: JCR nodeType, such as 'mgnl:content' or 'mgnl:page'.
+        '@nodes':
+          type: array 
+          description: An array of the name of all of the child nodes of this item. It is the way to get an ordered list of the child nodes.
+        
+        'mgnl:tags':
+          type: array 
+          description: An array of strings of the tag names.
+        'mgnl:created':
+          type: date 
+          description: Date of node creation.
+          example: '2015-07-01T08:50:23.426Z'
+        'mgnl:createdBy':
+          type: string 
+          description: ID of user who created item.
+          example: superuser
+        'mgnl:lastModified':
+          type: date 
+          description: Date of last modification. 
+          example: '2015-07-01T08:50:23.426Z'
+        'mgnl:lastModifiedBy':
+          type: string 
+          description: ID of user who most recently modified the item.
+          example: superuser
+        'mgnl:lastActivated':
+          type: date 
+          description: Date of last activation. (aka:publication)  
+          example: '2015-07-01T08:50:23.426Z' 
+        'mgnl:lastActivatedBy':
+          type: string 
+          description: ID of user who most recently activated the item.
+          example: superuser
+       
+        name:
+          type: string 
+          description: TOURS:Name of tour.
+        location:
+          type: string  
+          description: TOURS:Location of start of tour.
+        author:
+          type: string
+        body: 
+          type: string
+          format: rich text
+          description: TOURS:The full text about the tour.
+        duration:
+          type: string
+          description: TOURS:Number of days of the tour.
+        image:
+          type: object
+          $ref: "#/components/schemas/Asset"
+          #description: NOT USED BY REDOC. 
+        tourTypes:
+          type: array
+          items:
+            $ref: "#/components/schemas/Category"
+          description: TOURS:List of Tour Types that this tour belongs to.
+        destinations:
+          type: array
+          items:
+            $ref: "#/components/schemas/Category"
+          description: TOURS:List of Destinations that this tour belongs to.
+        
+                  
+   
+
+
+    Tours:
+      type: object
+      properties:
+        results:
+          type: array
+          items:
+            $ref: "#/components/schemas/Tour"
+
+
+    Asset:
+      description: |
+        Responses can have an 'Asset Reference'.\
+        This means, depending on the endpoint configuration, 
+        it will either contain a string with the ID of the asset,
+        or it will contain a full 'resolved' asset object (documented here).
+      
+        type: object
+      properties:
+        '@name':
+            type: string
+        '@path':
+            type: string
+            example: /pages/surfing/ash-unsplash.jpg
+        '@id':
+            type: string
+            example: a358f3ad-5a03-4f5d-b0ab-cb2219100472
+        '@link':
+            type: string
+            description: url to link to this asset.
+            example: /magnoliaPublic/dam/jcr:78399215-aed5-4518-9cfc-9b39855f4740/ash-unsplash.jpg
+        'metadata':
+          type: object
+          $ref: "#/components/schemas/AssetMetadata"
+          description: Metadata properties from the asset.
+
+        'renditions':
+            type: object
+            descriptions: Links for resized versions of this asset. 
+            properties:
+                '480x360':
+                    type: object
+                    $ref: "#/components/schemas/AssetRendition"
+                '960x720':
+                    type: object
+                    $ref: "#/components/schemas/AssetRendition"                
+
+    AssetRendition:
+      description: Links for resized versions of this asset.
+      type: object
+      properties:   
+        'link':
+            type: string
+            example: "/magnoliaPublic/.imaging/mte/travel-demo-theme/960x720/dam/pages/ash-unsplash/jcr:content/ash-unsplash.jpg"
+        'mimeType':
+            type: string
+            
+    AssetMetadata:
+      type: object
+      properties:
+        'filename':
+            type: string
+        'mimeType':
+            type: string
+        'caption':
+            type: string
+        'fileSize':
+            type: string
+        'height':
+            type: string
+        'width':
+            type: string
+        'title':
+            type: string
+        'format':
+            type: string
+        'coverage':
+            type: string
+        'description':
+            type: string
+        'publisher':
+            type: string
+        'rights':
+            type: string
+        'source':
+            type: string
+        'date':
+            type: date
+        'created':
+            type: date
+        'modified':
+            type: date
+        'creator':
+            type: array
+            items: 
+              type: string
+        'contributor':
+            type: array
+            items: 
+              type: string
+        'subject':
+            type: array
+            items: 
+              type: string
+
+    Category:
+      description: |
+        Responses can have an 'Item Reference'.\
+        This means, depending on the endpoint configuration, 
+        it will either contain a string with the ID of the item,
+        or it will contain a full 'resolved' item object (documented here).
+      
+      type: object
+      properties:
+        '@name':
+            type: string
+        '@path':
+            type: string
+            example: /pageTypes/sport
+        '@id':
+            type: string
+            example: a358f3ad-5a03-4f5d-b0ab-cb2219100472
+        "@nodeType": 
+            type: string
+            example: mgnl:category
+
+        "name": 
+            type: string
+        "displayName": 
+            type: string
+        "description":
+            type: string
+        "body": 
+            type: string
+        "level":
+            type: string
+        "icon": 
+            type: object
+            $ref: "#/components/schemas/Asset"
+        "image": 
+            type: object
+            $ref: "#/components/schemas/Asset"
+            
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          description: |
+            Example: `pathNotFound`
+        message:
+          type: string

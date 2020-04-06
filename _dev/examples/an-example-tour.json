@@ -1,0 +1,83 @@
+{
+    "@name": "A-Taste-of-Malaysia",
+    "@path": "/magnolia-travels/A-Taste-of-Malaysia",
+    "@id": "a358f3ad-5a03-4f5d-b0ab-cb2219100472",
+    "@nodeType": "mgnl:content",
+    "isFeatured": "true",
+    "name": "A Taste of Malaysia",
+    "description": "The trip that will leave a delicious taste on your lips",
+    "location": "Kuala Lumpur, Malaysia",
+    "tourTypes": [
+        {
+            "@name": "cultural",
+            "@path": "/tour-types/cultural",
+            "@id": "e007e401-1bf8-4658-8293-b9c743784264",
+            "@nodeType": "mgnl:category",
+            "body": "Holidays are for experiences, for discovering the greatest places in the world. Whether itâ€™s the Great Wall of China or the Egyptian pyramids, you want to know all about them. And have you thought about visiting the ancient temples of Vietnam or the winding alleyways of Jerusalem?  We organize the best local guides and hotels, so you can just soak in all that culture.",
+            "name": "cultural",
+            "level": "level-1",
+            "description": "Experiences of a lifetime",
+            "icon": "jcr:58c420b6-fa30-4578-8af0-c062ba51e5fb",
+            "displayName": "Cultural",
+            "image": "jcr:a792164f-5a2a-4708-b3c8-62b48a578200",
+            "@nodes": []
+        }
+    ],
+    "author": "Magnolia Travels",
+    "body": "<p>Get to know amazing Malaysia in a unique way - by learning about and tasting its delicious food. Malaysia isn&rsquo;t just about beautiful beaches, stunning scenery and historic temples. Malaysian cooking has earned a place for itself among other great global cuisines. In this tour, we give you a taste of just what makes it special.</p>\n<p>We&#39;ll spend the first week sampling Kuala Lumpur&#39;s delicious cosmopolitan restaurants and sights. Along the way, we also have special cooking courses so you can re-make the magic once you get home. Then we&#39;ll venture south through the countryside - for the traditional cooking of the countryside before the finale in Singapore. We guarantee that the trip will leave you wanting to taste more.</p> ",
+    "destination": [
+        {
+            "@name": "asia",
+            "@path": "/destinations/asia",
+            "@id": "7ec72c48-c33f-418e-b2ff-44cfb4bbb1f2",
+            "@nodeType": "mgnl:category",
+            "name": "asia",
+            "level": "level-1",
+            "icon": "jcr:75874ebc-eabe-4b24-8da2-92251ec7fcb3",
+            "displayName": "Asia & the Pacific",
+            "image": "jcr:20e4d7f7-3160-4670-9acb-5c87231088dd",
+            "@nodes": []
+        }
+    ],
+    "duration": "14",
+    "image": {
+        "@name": "ash-edmonds-441220-unsplash",
+        "@path": "/tours/ash-edmonds-441220-unsplash",
+        "@id": "jcr:78399215-aed5-4518-9cfc-9b39855f4740",
+        "@link": "/dam/jcr:78399215-aed5-4518-9cfc-9b39855f4740/ash-edmonds-441220-unsplash.jpg",
+        "metadata": {
+            "fileName": "ash-edmonds-441220-unsplash.jpg",
+            "mimeType": "image/jpeg",
+            "caption": "Malaysian cooking",
+            "fileSize": "367141",
+            "height": "1080",
+            "width": "1620",
+            "title": "Malaysian cooking",
+            "format": "image/jpeg",
+            "coverage": "Kuala Lumpur, Malaysia",
+            "description": "A cook handles half a dozen clay pots for his waiting customers. The embers take flight at quick speeds but the cook is not fazed.",
+            "publisher": "Ash Edmonds",
+            "rights": "zero/1.0/",
+            "source": "https://unsplash.com/photos/FiPot-1rsZw",
+            "creator": [
+                "superuser"
+            ],
+            "contributor": [
+                "Ash Edmonds"
+            ],
+            "subject": [
+                "A cook in a Malaysian restaurant"
+            ],
+            "date": "2020-04-04T11:02:47.897Z",
+            "created": "2015-01-29T07:42:56.607Z",
+            "modified": "2020-04-04T11:02:47.897Z"
+        },
+        "renditions": {
+            "960x720": {
+                "mimeType": "image/jpeg",
+                "link": "/.imaging/mte/travel-demo-theme/960x720/dam/tours/ash-edmonds-441220-unsplash/jcr:content/ash-edmonds-441220-unsplash.jpg"
+            }
+        }
+    },
+    "@nodes": []
+}

@@ -1,0 +1,58 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #599900;
+  --ifm-color-primary-dark: #355B00;
+  --ifm-color-primary-darker: #477A00;
+  --ifm-color-primary-darkest: #233D00;
+  --ifm-color-primary-light: #69A319;
+  --ifm-color-primary-lighter: 	#8AB74C;
+  --ifm-color-primary-lightest: #ACCC7F;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+
+.message {
+  padding:20px;
+  font-size:1.3em;
+}
+
+/* .redoc-wrap td {
+  border: 0px;
+} */
+
+iframe.redoc {
+  width: 100%;
+  height: 100vh;
+  border: 0;
+}
+
+.hero .hero__title, 
+.hero .hero__subtitle{
+  font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+}
+
+.button--outline.button--secondary.button--lg{
+  background: white;
+  color: black;
+  border: black;
+  font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.button--outline.button--secondary.button--lg:hover{
+  background: black;
+  color: white;
+  border: white;
+}

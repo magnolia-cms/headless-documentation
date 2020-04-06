@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <script>
+    const CONTENT_URL = 'https://demopublic.magnolia-cms.com/.rest/delivery/tours/v1/?isFeatured=true'
+    const DUMMY_TOURS = [{
+        "name": "Biking",
+        "location": "France"
+      },
+      {
+        "name": "Hiking",
+        "location": "Switzerland"
+      }
+    ]
+
+    function renderTours(tours) {
+
+      const markup = tours.map((tour) => {
+        return `<ul>
+                <li>Name: ${tour.name}</li>
+                <li>Location: ${tour.location}</li>
+              </ul>`;
+      }).join('');
+
+      return markup;
+    }
+
+    window.onload = function() {
+
+      const USE_DUMMY_CONTENT = true;
+
+      if (USE_DUMMY_CONTENT){
+        document.getElementById('myContent').innerHTML = renderTours(DUMMY_TOURS);
+
+      }else{
+        
+        // Hit the endpoint.
+        fetch(CONTENT_URL)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(myJson) {
+          const markup = renderTours(myJson.results);
+          document.getElementById('myContent').innerHTML = markup;
+        });
+      }
+      
+    };
+  </script>
+</head>
+
+<body>
+  <h1>Simplest SPA</h1>
+
+  <div id="myContent">
+  </div>
+  
+</body>
+
+</html>
