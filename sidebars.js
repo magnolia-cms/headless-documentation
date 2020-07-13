@@ -30,6 +30,8 @@ module.exports = {
           'concepts/integration',
         ],
       },
+      'visual-spa-editor',
+      'jamstack',
       'content-types',
       {             
         type: 'category',

@@ -10,13 +10,13 @@ We will explain the concepts based on examples. Each section will enhance the us
 
 This tutorial is divided into the following sections:
 
-- [Installation](installation)
-- [Hello Magnolia - Headless](hello-headless) 
-- [Hello Magnolia - SPA](hello-spa)
+- [Installation](/docs/getting-started/installation)
+- [Hello Magnolia - Headless](/docs/getting-started/hello-headless) 
+- [Hello Magnolia - SPA](/docs/getting-started/hello-spa)
 
 We are going to build a Travel website. Because we want to go live very quickly and take advantage of the latest frontend technlologies, our goal is to be able to build the website using the frontend tools we already know.
 
-![Demo Project](/assets/02-01-vanilla-result.png)
+![Demo Project](/assets/02-01-vanilla-result.jpg)
 
 First we will quickly (promise!) make sure our environment has all the required tooling setup. We will then go over a basic "form-based headless" scenario, in which we will give content marketers the ability to create content and to consume it via a REST API in a Vanilla JS app.
 

@@ -5,7 +5,7 @@ title: "Installation"
 
 ## Overview
 
-In this section we are going to make our system ready to install and develop the demo projects.
+In this section we are going to make our local system ready to install and develop the demo projects.
 
 ## Preparation
 
@@ -30,6 +30,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs
   defaultValue="mac"
+  groupId="operating-systems"  
   values={[
     { label: 'Mac', value: 'mac', },
     { label: 'Windows', value: 'win', },
@@ -105,6 +106,6 @@ Magnolia CLI: 3.1.0 (node.js: v12.15.0)
 
 You can find more information in the [Magnolia CLI](https://documentation.magnolia-cms.com/display/DOCS/Magnolia+CLI) Documentation.
 
-:::tip You just installed an enterprise Headless CMS.
-Let's have a look at our API, shall we?
+:::tip Your system is ready to go
+Let's build a headless app, shall we?
 :::

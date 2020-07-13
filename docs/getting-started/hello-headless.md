@@ -9,8 +9,9 @@ import TabItem from '@theme/TabItem';
 ## Overview
 - Install the demo project, and Magnolia
 - What is a headless cms? 
-- form to add content and delivery seperate 
-- api first approach
+- Forms to add content 
+- Content delivery API 
+- Frontend client
 
 > Scenario: We received the UX from our design team, but they still haven't decided on the details yet. However the content from our travel packages is already defined and we do not want to hold our marketers back from writing their content.
 
@@ -22,8 +23,8 @@ create a directory named "hello-magnolia-headless":
 cd hello-magnolia-headless
 ```
 
-Clone the git repository:
-(Note that we are cloning a special branch for this tutorial 'hello-magnolia-headless')
+Clone the git repository:  
+(Note that we are cloning a special branch for this tutorial __'hello-magnolia-headless'__)
 ```
 git clone -b hello-magnolia-headless https://git.magnolia-cms.com/scm/~czimmermann/basic-headless-demos.git
 ```
@@ -31,7 +32,7 @@ git clone -b hello-magnolia-headless https://git.magnolia-cms.com/scm/~czimmerma
 
 ### Install Magnolia for your demo project
 
-![Install Magnolia](/assets/install-magnolia-cli.png)
+![Install Magnolia](/assets/install-magnolia-cli.gif)
 
 
 Switch to the cloned project:
@@ -70,9 +71,10 @@ __Before starting__, get some handy configuration and sample images. From the `m
 
 <Tabs
   defaultValue="mac"
+  groupId="operating-systems"  
   values={[
     { label: 'Mac or Linux', value: 'mac', },    
-    { label: 'Windows', value: 'windows' },
+    { label: 'Windows', value: 'win' },
   ]  
 }>
 <TabItem value="mac">
@@ -94,22 +96,26 @@ xcopy ./_dev/content-to-bootstrap ./apache-tomcat/webapps/magnoliaAuthor/WEB-INF
 (It copies all files inside `/magnolia/_dev/content-to-bootstrap` into
 `/magnolia/apache-tomcat/webapps/magnoliaAuthor/WEB-INF/bootstrap/common`)
 
-Start magnolia
+Start Magnolia
 
-- `mgnl start`
-- magnolia is up and running
-  - open http://localhost:8080 to verify the installation
+```
+mgnl start
+```
 
-![welcome screen](/assets/01-installation-01-welcome.png)
+- When the terminal shows `Server startup in [...] milliseconds`, magnolia is up and running
+  - Open http://localhost:8080
+  - Click 'Run the web update on the author instance'
+  - Login with username:`superuser` and password:`superuser`
+
+![welcome screen](/assets/01-installation-01-welcome.gif)
 
 ### Configure CORS
 
-Log into Magnlolia
 * Open the [Configuration app](http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:configuration:browser;/server/filters:treeview:)
 * Find `/server/filters` and scroll to the end.
 * Move `addCORSHeaders` directly after `uriSecurity` (a few items up.)
 
-![Frontend](/assets/configure-cors.png)
+![Frontend](/assets/configure-cors.gif)
 
 ## What are we going to build?
 
@@ -129,7 +135,7 @@ What will we do next?
 - Create a Magnolia App
 - Defining our REST API Endpoint
 
-### Defining our Content Type
+## Defining our Content Type
 
 > After talking to the design and marketing team we know that our Travel Packages can have the following information:
 - name
@@ -221,7 +227,7 @@ model:
       i18n: true
 
 ```
-![Terminal Create Content Type](/assets/create-content-type.png)
+![Terminal Create Content Type](/assets/create-content-type.gif)
 
 Magnolia will automatically pickup the new content type and will make it available on our running instance.
 
@@ -255,19 +261,23 @@ subApps:
               - name: isFeatured
                 buttonLabel: Featured
 ```
+
+To see your new Tours app, log out and log back in, and press the grid icon.
+
+
 ### Install content
 We have prepared Demo Content to start with. To install the Demo Content follow these steps:
 
 * Open Tours app
-* Click `Import` action (You might need to scroll down in the action bart.)
+* Click `Import` action (You might need to scroll down in the action bar.)
 * Select the file `./magnolia/_dev/content-to-import/tours.magnolia-travels.xml`
 
-![Terminal Create Content Type](/assets/import-tours-content.png)
+![Terminal Create Content Type](/assets/import-tours-content.gif)
 
 ### Browsing our content  
 These steps were already enough to browser the content and to use the Form Editor.
 
-![Browsing Content](/assets//02-01-browse.png)
+![Browsing Content](/assets//02-01-browse.gif)
 
 #### What did we just do? 
 - We modeled our content and created a Content Type
@@ -276,7 +286,7 @@ These steps were already enough to browser the content and to use the Form Edito
 - We browsed through the Tours App and viewed Demo Content
 
 
-### Defining our REST API Endpoint
+## Defining our REST API Endpoint
 
 Defining our REST API Endpoints is as easy as creating the content type and app.
 
@@ -312,8 +322,10 @@ references:
 
 ### Accessing our content 
 - Open your browser
-- Go to url: http://localhost:8080/magnoliaAuthor/.rest/delivery/tours
-- You can see the json
+- Go to url: http://localhost:8080/magnoliaAuthor/.rest/delivery/tours/?limit=100&orderBy=mgnl:lastModified%20desc
+- You can see the JSON
+- (Note the `limit` parameter. Endpoints limit to 10 results by default.)
+- (Note the `orderBy` parameter. You can order on any property.)
 
 ![Browsing JSON](/assets//02-01-browse-json.gif)
 
@@ -334,20 +346,11 @@ references:
 We have seen how easy it is to get started. Let's build our website to consume the data.
 We will build a very simple project.
 
-![Demo Project](/assets//02-01-vanilla-result.png)
+![Demo Project](/assets/02-01-vanilla-result.jpg)
 
 Open the `basic-headless-demos/frontend` directory. 
 
-```
-cd ../../../../../../basic-headless-demos/frontend
-```
 
-
-#### Install Dependencies and Start
-
-```
-npm install
-```
 
 ### Write the client
 
@@ -376,7 +379,7 @@ Edit index.html and copy in the following code:
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
       (function($) {
-        const ENDPOINT = "http://localhost:8080/magnoliaAuthor/.rest/delivery/tours/?isFeatured=true";
+        const ENDPOINT = "http://localhost:8080/magnoliaAuthor/.rest/delivery/tours/?limit=100&orderBy=mgnl:lastModified%20desc";
         const IMAGE_BASE = 'http://localhost:8080';
 
         $.get(ENDPOINT, function(data) {
@@ -395,26 +398,20 @@ Edit index.html and copy in the following code:
 </html>
 ```
 
-### Start the project
+### Run the frontend
 
-Our demo will startup a simple static http server and serve our ```index.html``` file we've created.
+Just open the `index.html` file in a web browser, for example by double-clicking on it.
 
-```
-npm start
-```
-
-![Demo Project](/assets/start-simple-client.png)
-
-Open your browser and enter the address given in the terminal.
+(You could also place the file on any web server.)
 
 ### Permissions for Images
 
-What? No images displaying? We need to allow the serving of the image urls.
+What? No images displaying? We need to allow anonymous access to the image urls since we are running on the author instance.
 
 * Open the [Security app](http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:security:roles;/anonymous:treeview:), open the `Roles` tab, and edit the `anonymous` role. 
-* Go to `Web access` tab, click `Add new`and enter path `/dam/*` set to GET.
+* Go to `Web access` tab, click `Add new`and enter path `/.imaging*` set to GET.
 
-![Image Access for Anonymous](/assets/README-security-anonymous-dam.png)
+![Image Access for Anonymous](/assets/README-security-anonymous-imaging.png)
 
 Now refresh your client, et voila - images!
 

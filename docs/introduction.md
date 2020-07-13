@@ -4,7 +4,7 @@ metaTitle: "Introduction to Magnolia Headless"
 metaDescription: "This is the meta description"
 ---
 
-## Why Magnolia?
+## Why Magnolia? 
 
 Magnolia is the headless CMS that’s as great for content authors as it is for developers.
 
