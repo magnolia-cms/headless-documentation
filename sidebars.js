@@ -19,6 +19,16 @@ module.exports = {
       },
       {
         type: 'category',
+        label: 'Magnolia Cloud',
+        items: [
+          'cloud/start',
+          'cloud/cockpit',
+          'cloud/git',
+          'cloud/hello-cloud',
+        ],
+      },
+      {
+        type: 'category',
         label: 'Concepts',
         items: [
           
