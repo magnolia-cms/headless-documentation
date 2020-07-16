@@ -27,7 +27,7 @@ To set up a new environment:
     Environments section.
 
 2.  Click **Set up new environment**.\
-    ![](setup-new-env-start-bar.png){width="600"}
+    ![](/assets/cloud/setup-new-env-start-bar.png){width="600"}
 
 3.  Choose what kind of environment you want to create: Live, UAT or
     Integration.\
@@ -37,7 +37,7 @@ To set up a new environment:
 4.  Choose the Magnolia version. You can see runtime information (the
     OS, JDK and Tomcat versions) about the bundles available.
 
-    ![](SETUP-ENV-CHOOSE-M-VESION.png){width="600"}
+    ![](/assets/cloud/SETUP-ENV-CHOOSE-M-VESION.png){width="600"}
 
 5.  Click **Set up \<environment name\>**. The creation of the
     environment may take some time.

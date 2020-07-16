@@ -37,15 +37,15 @@ the copy operation.
 :::
 
 1.  In **Installed releases** click **Install an update**.\
-    ![](install-update.png){width="600"}
+    ![](/assets/cloud/install-update.png){width="600"}
 2.  Click **Copy content for testing**.\
-    ![](copy-content.png){width="600"}
+    ![](/assets/cloud/copy-content.png){width="600"}
 3.  Select the source environment from which you want to copy content
     and the target environment the content will be copied to before
     clicking **Next**.\
-    ![](copy3step1.png){width="600"}
+    ![](/assets/cloud/copy3step1.png){width="600"}
 4.  Confirm the consequences of the copy operation and click **Copy**.\
-    ![](Copy4Step2.png){width="600"}\
+    ![](/assets/cloud/Copy4Step2.png){width="600"}\
     The copy operation begins.
 5.  Click **OK**. As all actions in the Magnolia cockpit are
     asynchronous, you can click on **OK** before the copy is complete:

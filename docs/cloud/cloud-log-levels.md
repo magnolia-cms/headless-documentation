@@ -39,10 +39,10 @@ To change the log levels for your running instances:
 1.  In the Package overview page, click **Manage environments** in the
     Environments section.
 2.  Click **Log levels**.\
-    ![](5-6-5-cockpit-logs-.png){width="500"}
+    ![](/assets/cloud/5-6-5-cockpit-logs-.png){width="500"}
 3.  Select the instance for which you want to change log levels in the
     **Log levels for** dropdown.\
-    ![](image2018-4-17_11-12-33.png){width="500"}
+    ![](/assets/cloud/image2018-4-17_11-12-33.png){width="500"}
 4.  Select the required log level for each logger using the drop-downs
     on each line.\
     The levels available are standard Log4J log levels: ALL; TRACE;

@@ -31,7 +31,7 @@ To protect an environment:
 1.  In the Package overview page, click **Manage environments** in the
     Environments section.
 2.  Click **Termination protection**.\
-    ![](cloud-protect-env.png){height="73"}
+    ![](/assets/cloud/cloud-protect-env.png){height="73"}
 3.  Choose the environment you want to protect: Live, UAT or
     Integration. You can only select one environment at a time.
 4.  Confirm the consequences of the action and click **Enable

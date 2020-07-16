@@ -200,27 +200,27 @@ Now it's time to test the new template on your local Magnolia instance. Make sur
 
 Use your favorite web browser to open the URL `http://localhost:8080/magnoliaAuthor/`. The first request may take some time if Magnolia has to finish installing its modules. When you see the login screen, enter `superuser` for both the user name and password:
 
-![](loginAuthor_crop_v2.png){width=600}
+![](/assets/cloud/loginAuthor_crop_v2.png){width=600}
 
 ### Create a new page with the cloudy-page template
 
 Search for and open the Pages app. Add a page. Name it `home` and select the `cloudy-page` template:
 
-![](add_home_page_crop.png){width=600}
+![](/assets/cloud/add_home_page_crop.png){width=600}
 
 Open `cloudy-page` for editing:
 
-![](cloudypage_2edit.png){width=600}
+![](/assets/cloud/cloudypage_2edit.png){width=600}
 
 Add a component to the MAIN area. Make sure that both the `bluesky-component` and `HTML` components are available :
 
-![](add_component_crop.png){width=600}
+![](/assets/cloud/add_component_crop.png){width=600}
 
 ### Find hello-cloud in the Resource Files app
 
-Type "open resources app" in the Find Bar or click the (mgnl-app-launcher: []) app launcher icon and then the **Resource Files** app. In the tree you can see the `hello-cloud` light module with all of its resources. The filesystem icon ( ![](origin-icon-file-system.gif){.inline}) in the Origin column will indicate that all of the resources in the module are stored on your local filesystem.\
+Type "open resources app" in the Find Bar or click the (mgnl-app-launcher: []) app launcher icon and then the **Resource Files** app. In the tree you can see the `hello-cloud` light module with all of its resources. The filesystem icon ( ![](/assets/cloud/origin-icon-file-system.gif){.inline}) in the Origin column will indicate that all of the resources in the module are stored on your local filesystem.\
 \
-![](treeview_crop.png){width=600}
+![](/assets/cloud/treeview_crop.png){width=600}
 
 ## 3. Send the code to the cloud-based Magnolia repository
 
@@ -290,7 +290,7 @@ nothing to commit, working tree clean
 ```
 :::
 
-![](cloudy_.gif){.inline} Great! You've successfully concluded the first part of the tutorial in which you have created a Magnolia light module and pushed it to your Magnolia Git repository. In the next part of the tutorial you will be working in the Magnolia cockpit.
+![](/assets/cloud/cloudy_.gif){.inline} Great! You've successfully concluded the first part of the tutorial in which you have created a Magnolia light module and pushed it to your Magnolia Git repository. In the next part of the tutorial you will be working in the Magnolia cockpit.
 
 # B) In the Magnolia cockpit []{#B}
 
@@ -310,13 +310,13 @@ Log in to the Magnolia cockpit and click **Show package overview** &gt; **Instal
 
 On the **Install an update** page click **Install a development snapshot**:
 
-![](tutorial4a.png){width=600}
+![](/assets/cloud/tutorial4a.png){width=600}
 
 A [two-step wizard](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+snapshot) guides you through how to retrieve your latest commit from the Git repository and install it in the Integration environment. The **Master** option in the wizard includes the hello-cloud light module you committed to Git in step 3 of this tutorial.
 
 Once you have completed the steps in the wizard, look at the Integration environment in the **Package overview** page. Note the green tick before the instance name and the **Info** column that shows *master*.
 
-![](tutorial4b.png){width=600}
+![](/assets/cloud/tutorial4b.png){width=600}
 
 At this point you can check that your module updates are present in the installed snapshot by going to the Magnolia author instance via the **Edit content** link in the Integration section. The state of the light modules should now be identical in both your local Magnolia instance and the cloud-based Integration environment.
 
@@ -326,13 +326,13 @@ You now wrap the snapshot carrying the module updates into an installable releas
 
 On the **Install an update** page click **Define a new release**:
 
-![](tutorial5a.png){width=600}
+![](/assets/cloud/tutorial5a.png){width=600}
 
 Another [three-step wizard](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Defining+a+release) guides you through how to wrap the snapshot containing the hello-cloud light module into a release.
 
 Once you have completed the steps in the wizard, look at the Integration environment in the Package overview page. Note that the release is assigned a version number that is displayed in the Integration environment section . You will refer to this version number later on when installing in environments.
 
-![](tutorial5b.png){width=600}
+![](/assets/cloud/tutorial5b.png){width=600}
 
 ## 6. Install the new release in the UAT environment
 
@@ -342,7 +342,7 @@ Click **Install an update** in the **Installed releases** section.
 
 On the **Install an update** page click **Install a release**:
 
-![](tutorial6a.png){width=600}
+![](/assets/cloud/tutorial6a.png){width=600}
 
 Another [four-step wizard](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+UAT) guides you through how to install the release to the UAT or Live environment.
 
@@ -378,7 +378,7 @@ If you [publish](/Administration/Architecture/Publishing+and+activation) the pag
 
 ![](published hello cloudy page.png){width=600}
 
-![](cloudy_.gif){.inline} Congratulations, you have completed this tutorial! ![](cloudy_.gif){.inline}
+![](/assets/cloud/cloudy_.gif){.inline} Congratulations, you have completed this tutorial! ![](/assets/cloud/cloudy_.gif){.inline}
 
 Have a look at the rest of the [Magnolia Cloud](/Magnolia+Cloud) or dig further into light module development by learning about [front-end development in Magnolia](/Developing/Magnolia+front-end+development).
 

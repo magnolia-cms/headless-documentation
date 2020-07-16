@@ -12,7 +12,7 @@ In this section and its subpages, you learn how to manage environments.
 
 An environment consists of one or several *[spaces](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#space)*, which group together related functionality needed to build or deliver a site. The systems that a space actually contains and how they are connected is defined by the *[space's setup](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#space-setup)*. A space is a container for one or more instances of Magnolia.
 
- ![](/Magnolia+Cloud/Cockpit/gloss-env.png)
+ ![](/assets/cloud/gloss-env.png)
 
 A cloud-based Magnolia package typically consists of three [environments](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#environment):
 
@@ -26,7 +26,7 @@ Environments are managed in the **Manage environments** page.
 
 To access this page, in the **Package overview** page, click **Manage environments**.
 
-![](Envs-Change-envs-BAR_.png){width=600}
+![](/assets/cloud/Envs-Change-envs-BAR_.png){width=600}
 
 From the **Manage environments** page you can:
 
@@ -44,7 +44,7 @@ From the **Manage environments** page you can:
 
 :::
 
-![](cloud-manage-environments-all-available.png){width=600}
+![](/assets/cloud/cloud-manage-environments-all-available.png){width=600}
 
 ::: note
   The options available in **Manage environments** depend on the current state of your setup:

@@ -25,20 +25,20 @@ changes have been tested and accepted in the UAT environment, the
 release can be [installed in the Live
 environment](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+Live).
 
-![](mnow-int-uat.png){width="500"}
+![](/assets/cloud/mnow-int-uat.png){width="500"}
 
 To install a release:
 ---------------------
 
 1.  In **Installed releases** click **Install an update**.\
-    ![](InstallUAT1_scope_v2.png){width="600"}
+    ![](/assets/cloud/InstallUAT1_scope_v2.png){width="600"}
 2.  Click **Install a release**.\
-    ![](Install-site-release.png){width="600"}
+    ![](/assets/cloud/Install-site-release.png){width="600"}
 3.  Installing is a four-step process:
     1.  Select the release you want to install and click **Next**.
         Latest versions display first. Select **Other site releases**
         for a dropdown of earlier versions.\
-        ![](pick.png){width="600"}
+        ![](/assets/cloud/pick.png){width="600"}
     2.  Select the environment to install in and click **Next**.
         Environments that have not been set up are not available for
         selection.
@@ -76,7 +76,7 @@ Next:
 [Installing a release in
 Live](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+Live)
 
-```{=html}
+<!-- ```{=html}
 <!-- Original Confluence content:
 
 <ac:structured-macro ac:name="html-wrap" ac:schema-version="1" ac:macro-id="edcda0ff-ecb3-434b-af11-dd105c1cc687"><ac:parameter ac:name="align">right</ac:parameter><ac:parameter ac:name="float">
@@ -92,4 +92,4 @@ Live](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a
    </ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:content-title="Installing a release in Live" /></ac:link></p></ac:rich-text-body></ac:structured-macro>
 
 -->
-```
+

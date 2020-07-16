@@ -36,12 +36,12 @@ To restore from a backup:
 1.  In the Package overview page click **Manage environments** in the
     Environments section.
 2.  Click **Restore from backup**.\
-    ![](replace-with-backup.png){width="600"}
+    ![](/assets/cloud/replace-with-backup.png){width="600"}
 3.  Select the backup from which you want to restore content and
     configuration.\
     You can choose the latest **Manual backup** or one of the
     **Automated backups**.\
-    ![](back-up-selection_manual.png){width="600"}\
+    ![](/assets/cloud/back-up-selection_manual.png){width="600"}\
     You are informed if there are differences between the backup you
     have selected and your current Live environment.
 4.  Acknowledge the consequences and click **Restore**.

@@ -39,8 +39,8 @@ instances.
 You can view the default cloud user groups in the Security app and in
 the **People** section of the cockpit.
 
-\[![](5-7-0-cloud-security-groups.png){width="500"}
-![](image2017-11-29_9-1-19.png){width="500"}\]{.confluence-embedded-file-wrapper
+\[![](/assets/cloud/5-7-0-cloud-security-groups.png){width="500"}
+![](/assets/cloud/image2017-11-29_9-1-19.png){width="500"}\]{.confluence-embedded-file-wrapper
 confluence-embedded-manual-size}
 
 \[\]{.confluence-embedded-file-wrapper confluence-embedded-manual-size}

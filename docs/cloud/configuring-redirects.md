@@ -21,7 +21,7 @@ Certificates for the domains you redirect from and to must be managed by
 Magnolia Cloud.
 :::
 
-![](cloud-redirect-config.png){width="500"}
+![](/assets/cloud/cloud-redirect-config.png){width="500"}
 
 To configure a redirect rule:
 

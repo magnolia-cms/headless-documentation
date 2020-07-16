@@ -9,7 +9,7 @@ requiring a restart or upgrade operations.
 Notifications appear in the cockpit banner **Notifications** box and as
 pop-ups when they are first delivered.
 
-![](cloud-cockpit-banner.png){width="600"}
+![](/assets/cloud/cloud-cockpit-banner.png){width="600"}
 
 There are three types of notification:
 
@@ -23,7 +23,7 @@ the total number of unarchived notifications available in the detail
 view. When you hover over the notifications, the total number of new
 messages is displayed in a tooltip.
 
-![](cloud-cockpit-notif-hover.png){.inline height="71"}
+![](/assets/cloud/cloud-cockpit-notif-hover.png){.inline height="71"}
 
 You can access the details of notifications by clicking on the
 notifications box in the banner.
@@ -34,7 +34,7 @@ notification details and the notification is considered as "read" and is
 removed from the count of new notifications.
 :::
 
-![](cloud-cockpit-notifications.png){height="250"}
+![](/assets/cloud/cloud-cockpit-notifications.png){height="250"}
 
 Click on the plus sign icon to the left of any notification to see more
 details about it.
@@ -66,7 +66,7 @@ total number of available notifications in the banner. To view archived
 notifications, you must set the first filter to **archived
 notifications**.
 
-![](cloud-cockpit-notif-filter-archive.png){.inline width="200"}
+![](/assets/cloud/cloud-cockpit-notif-filter-archive.png){.inline width="200"}
 
 ```{=html}
 <!-- Original Confluence content:

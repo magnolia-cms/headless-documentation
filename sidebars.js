@@ -23,6 +23,7 @@ module.exports = {
         items: [
           'cloud/onboarding-to-magnolia-cloud',
           'cloud/hello-cloud',
+          'cloud/cockpit',
           'cloud/developing-for-magnolia-in-the-cloud',
           'cloud/installing-updates-in-cockpit',
           'cloud/managing-environments-in-cockpit',

@@ -8,7 +8,7 @@ title: Developing for Magnolia in the cloud
 
 # Standard cloud bundle development workflow
 
-![](mnow-local-dev-overview.png){width=600}
+![](/assets/cloud/mnow-local-dev-overview.png){width=600}
 
 [/_i/_cloudContext/_cloud+environments+vary](!include)
 
@@ -54,7 +54,7 @@ See [Setting up a local Git repository](/Magnolia+Cloud/Developing+for+Magnolia+
 
 In the case of [*custom* cloud bundle](/Magnolia+Cloud/Supported+modules+in+the+cloud#cloud-bundle) implementations, the development workflow is different. You or your cloud partner create the Magnolia bundle that is deployed to the cloud.
 
-![](cloud-custom-dev-overview.png){width=600}
+![](/assets/cloud/cloud-custom-dev-overview.png){width=600}
 
 From Magnolia 6.2.1, Magnolia provides a [cloud-specific option](https://git.magnolia-cms.com/projects/BUILD/repos/maven-archetypes/browse/magnolia-cloud-project-archetype/src/main/resources/archetype-resources/README.md) in the [Magnolia Maven Archetype](/Developing/How+to+use+Magnolia+Maven+archetypes) to facilitate the creation of your cloud bundles. The Magnolia Maven Archetype generates a best-practice project skeleton. The Magnolia Cloud Maven Plugin validates and uploads your custom cloud bundle. Once your custom bundle is deployed to the cloud, you can also work with Magnolia Cloud using both Light Development (as described above) and Java custom modules.
 

@@ -30,19 +30,19 @@ To restart an instance:
     Environments section.
 
 2.  Click **Restart an instance**.\
-    ![](image2020-2-5_10-11-21.png){width="556"}
+    ![](/assets/cloud/image2020-2-5_10-11-21.png){width="556"}
 
 3.  Choose the environment in which you want to restart an instance:
     Live, UAT or Integration and click **Next.**\
-    ![](image2020-2-5_10-45-2.png){.inline height="150"}
+    ![](/assets/cloud/image2020-2-5_10-45-2.png){.inline height="150"}
 
 4.  Choose the instance you want to restart. You can only select one
     instance at a time and click **Next**.
 
-    ![](image2020-2-5_10-46-41.png){.inline height="150"}
+    ![](/assets/cloud/image2020-2-5_10-46-41.png){.inline height="150"}
 
 5.  Confirm the consequences of the restart and click **Restart**.\
-    ![](image2020-2-5_10-47-47.png){width="450"}\
+    ![](/assets/cloud/image2020-2-5_10-47-47.png){width="450"}\
     The operation takes approximately 5 minutes. During that time, the
     environment and all the instances it contains are unavailable.
 

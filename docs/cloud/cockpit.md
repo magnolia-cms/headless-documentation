@@ -18,7 +18,7 @@ The Magnolia cockpit is the central point of access to all functionality provide
 
 A URL for the cockpit and login details for all the users you requested are provided by Magnolia when you subscribe to Magnolia's cloud offering. Use this information to access the cockpit.
 
-![](mnow_login.png){width=500}
+![](/assets/cloud/mnow_login.png){width=500}
 
 Once you have logged in, you can manage your user settings by clicking on your name in the top right corner.
 
@@ -28,7 +28,7 @@ You are logged out automatically after 30 minutes of inactivity for security rea
 
  Welcome! The first page you will see upon logging in is the subscription packages page. It shows the package created for you by Magnolia and its status.
 
-![](mnow_site_overview.png){width=600}
+![](/assets/cloud/mnow_site_overview.png){width=600}
 
  From this page, you can:
 
@@ -43,7 +43,7 @@ You are logged out automatically after 30 minutes of inactivity for security rea
 
 The top banner in the cockpit displays notifications sent to you by Magnolia Helpdesk.
 
-![](cloud-cockpit-banner.png){width=600}
+![](/assets/cloud/cloud-cockpit-banner.png){width=600}
 
 There are three types of notification:
 
@@ -53,7 +53,7 @@ There are three types of notification:
 
 Click the notifications box to access the [cockpit notifications](/Magnolia+Cloud/Cockpit/Understanding+cockpit+notifications) and manage your messages.
 
-![](cloud-cockpit-notifications.png){width=600}
+![](/assets/cloud/cloud-cockpit-notifications.png){width=600}
 
 # Package overview
 
@@ -79,7 +79,7 @@ The [activity log](/Magnolia+Cloud/Cockpit/Understanding+activity+logs) displays
 
 The package overview page provides an overview of all the *[Environments](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#environment)* and *[Spaces](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#space)* that have been set up for the package.
 
-![](mnow_env-overview.png){width=600}
+![](/assets/cloud/mnow_env-overview.png){width=600}
 
 A Magnolia package typically consists of three environments:
 
@@ -110,7 +110,7 @@ From the environments section, you can [Manage your environments](/Magnolia+Clou
 
 Each environment consists of one or several *[spaces](/Glossary#space)*, which separate the environment into larger blocks containing public or author instances of Magnolia. By default, each environment has an Author space and a Public space.
 
-![](mnow_each-env.png){width=600}
+![](/assets/cloud/mnow_each-env.png){width=600}
 
 For a given environment, you can: []{#edit-content-auth-instance}
 
@@ -137,7 +137,7 @@ You can see the status of your environment from the status icon beside the insta
 
 The package overview page provides information about what has been installed in your package in the Installed releases section.
 
-![](mnow_site_release.png){width=600}
+![](/assets/cloud/mnow_site_release.png){width=600}
 
 You can view time-stamped releases and [install updates](#install-updates).
 
@@ -145,7 +145,7 @@ You can view time-stamped releases and [install updates](#install-updates).
 
 The **Install an update** page is the access point for developers to retrieve their work and propagate it through the different environments and testing stages before putting it into production.
 
-![](mnow_install-update.png){width=600}
+![](/assets/cloud/mnow_install-update.png){width=600}
 
 See the following pages for information about how to:
 
@@ -161,7 +161,7 @@ See the following pages for information about how to:
 
 The package overview page displays a list of stakeholders and their contact details in the **People** section.
 
-![](mnow_people.png){width=600}
+![](/assets/cloud/mnow_people.png){width=600}
 
 # Additional information
 
@@ -171,7 +171,7 @@ A **Logs view URL** link to [the Datadog service for your subscription package](
 
 The **GIT repository** URL for the subscription package is provided: when you [develop locally](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud), you must push your configuration changes to this GIT repository so they can be installed in the Integration environment.
 
-![](mnow_add-info.png){width=600}
+![](/assets/cloud/mnow_add-info.png){width=600}
 
 
 

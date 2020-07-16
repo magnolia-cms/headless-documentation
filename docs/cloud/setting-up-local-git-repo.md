@@ -41,7 +41,7 @@ repository](/Magnolia+Cloud/Cockpit#additional-information) connected to
 your Magnolia package. This information is in the **Additional
 information** section of the **Package overview**:
 
-![](AdditionalInformation.png){width="600"}
+![](/assets/cloud/AdditionalInformation.png){width="600"}
 
 Open your shell, `cd` into a directory of your choice and clone the
 Magnolia repository. Use a directory that does not contain special

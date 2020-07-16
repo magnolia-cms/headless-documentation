@@ -12,11 +12,11 @@ To tear down an environment:
     Environments section.
 
 2.  Click **Tear down an environment**.\
-    ![](mnow_teardown-env.png){width="600"}
+    ![](/assets/cloud/mnow_teardown-env.png){width="600"}
 
 3.  Choose what kind of environment you want to tear down: Live, UAT or
     Integration.\
-    ![](mnow_choose-env-teardown.png){width="600"}
+    ![](/assets/cloud/mnow_choose-env-teardown.png){width="600"}
 
 4.  Confirm the consequences of the teardown and click **Tear down
     \<environment name\>**.

@@ -10,7 +10,7 @@ cockpit.
 The activity log gives you a single location to see all notifications
 and understand how the current state of the setup came to be.
 
-![](5-7-1-cloud-activity-log.png){width="600"}
+![](/assets/cloud/5-7-1-cloud-activity-log.png){width="600"}
 
 The activity log shows:
 
