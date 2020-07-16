@@ -21,10 +21,12 @@ module.exports = {
         type: 'category',
         label: 'Magnolia Cloud',
         items: [
-          'cloud/start',
-          'cloud/cockpit',
-          'cloud/git',
+          'cloud/onboarding-to-magnolia-cloud',
           'cloud/hello-cloud',
+          'cloud/developing-for-magnolia-in-the-cloud',
+          'cloud/installing-updates-in-cockpit',
+          'cloud/managing-environments-in-cockpit',
+          'cloud/supported-cloud-modules',
         ],
       },
       {

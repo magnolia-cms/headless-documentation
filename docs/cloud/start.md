@@ -1,7 +1,7 @@
 ---
 title: "Magnolia Cloud Introduction"
-
 ---
+
 ## Overview
 
 <!-- <<[../modules/start/install.md]

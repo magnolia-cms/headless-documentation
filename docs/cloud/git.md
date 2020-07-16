@@ -1,7 +1,7 @@
 ---
 title: "Git"
-
 ---
+
 ## Overview 
 In this Tutorial we will learn how to use the Visual Single Page Application (SPA) Editor to build stunning websites with ReactJS and Angular.
 
