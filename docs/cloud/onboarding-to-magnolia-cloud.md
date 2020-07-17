@@ -2,9 +2,7 @@
 title: Onboarding to Magnolia Cloud
 ---
 
-[](!toc)
-
-# Subscribing
+## Subscribing
 
 Interested in using Magnolia for your cloud-based project? [Contact us for a demo](https://www.magnolia-cms.com/try.html) and let's get you started.
 
@@ -15,13 +13,15 @@ During the subscription process, we ask you to provide details about your projec
 * A short name for your project (limited to 7 lowercase characters), for example, *acmeweb.*
 * Regions where your editors work.
 * User accounts required (full name, email address, role, and at least one telephone number for notifications).
-* [Domain names](/Magnolia+Cloud/Onboarding+to+Magnolia+Cloud/Cloud+domains+and+certificates).
+* [Domain names](cloud-domains-and-certificates).
 * Planned integrations.
 * The whitelist of IP addresses allowed access to your cloud package environments.
 
-[Having this information ready means we can get you up and running faster.]{.diff-block-target diff-block-context}
+:::tip
+Having this information ready means we can get you up and running faster.
+:::
 
-# Onboarding
+## Onboarding
 
 Congratulations on your subscription to Magnolia!
 
@@ -32,7 +32,7 @@ After subscribing, you receive an email from the Magnolia Help Desk with informa
 * The Git repository address for your subscription package.
 * Magnolia JIRA credentials.
 * Magnolia Nexus credentials.
-* Some [documentation links](/Magnolia+Cloud) to help you get started.
+* Some documentation links to help you get started.
 
 
 

@@ -21,13 +21,70 @@ module.exports = {
         type: 'category',
         label: 'Magnolia Cloud',
         items: [
-          'cloud/onboarding-to-magnolia-cloud',
+          {
+            type: 'category',
+            label: 'Onboarding with Cloud',
+            items: [
+              'cloud/onboarding-to-magnolia-cloud',
+              'cloud/cloud-domains-and-certificates',
+              'cloud/cloud-user-management']
+          },
           'cloud/hello-cloud',
-          'cloud/cockpit',
-          'cloud/developing-for-magnolia-in-the-cloud',
-          'cloud/installing-updates-in-cockpit',
-          'cloud/managing-environments-in-cockpit',
-          'cloud/supported-cloud-modules',
+          {
+            type: 'category',
+            label: 'The Cockpit',
+            items: [
+              'cloud/cockpit',
+              'cloud/cockpit-concepts', 
+              'cloud/understanding-activity-logs',
+              'cloud/understanding-cockpit-notifications']
+          },
+          {
+            type: 'category',
+            label: 'Developing for Magnolia Cloud',
+            items: [
+              'cloud/creating-custom-cloud-bundles',
+              'cloud/setting-up-local-git-repo',
+              'cloud/setting-up-local-bundle',
+              'cloud/developing-and-testing',
+              'cloud/committing-remote-git-repository'
+            ]
+          },
+          {
+            type: 'category',
+            label: 'Installing updates from the Cockpit',
+            items: [
+              'cloud/installing-a-snapshot',
+              'cloud/defining-a-release',
+              'cloud/installing-a-UAT-release',
+              'cloud/installing-a-live-release',
+              'cloud/copying-content-for-testing',
+              'cloud/upgrading-in-cloud'
+            ]
+          },
+          {
+            type: 'category',
+            label: 'Managing Environments in the Cockpit',
+            items: [
+              'cloud/monitoring-and-logging',
+              'cloud/restarting-instances',
+              'cloud/viewing-cloud-database-info',
+              'cloud/setting-up-new-environment',
+              'cloud/tearing-down-an-environment',
+              'cloud/configuring-redirects',
+              'cloud/protecting-environments',
+              'cloud/backing-up-and-restoring',
+              'cloud/hiding-custom-bundle-snapshots'
+            ]
+          },
+          {
+            type: 'category',
+            label: 'Cloud modules',
+            items: [
+              'cloud/supported-cloud-modules',
+              'cloud/multisite-in-cloud'
+            ]
+          },
         ],
       },
       {
