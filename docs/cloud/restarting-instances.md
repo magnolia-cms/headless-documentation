@@ -2,12 +2,6 @@
 title: Restarting instances
 ---
 
-::: {.infobox}
-Related topics:
-
--   [Cockpit](/Magnolia+Cloud/Cockpit)
-:::
-
 This page explains how to restart instances in your cloud-based Magnolia
 package. You may want to do this, for example, if an instance is not
 reachable due to high CPU or memory usage, or if you use a [YAML-based

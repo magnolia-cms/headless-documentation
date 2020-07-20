@@ -2,13 +2,6 @@
 title: Recovering the Live environment
 ---
 
-::: {.infobox}
-Related topics:
-
--   [Backing up and
-    restoring](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Backing+up+and+restoring)
-:::
-
 This page explains how to restore the Live environment to a previous
 state.
 

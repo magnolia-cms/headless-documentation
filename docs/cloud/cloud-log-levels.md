@@ -2,16 +2,6 @@
 title: Managing cloud log levels
 ---
 
-::: {.infobox}
-Related topics:
-
--   [Monitoring and
-    logging](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Monitoring+and+logging)
--   [Using REST to access cloud
-    logs](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Monitoring+and+logging/Using+REST+to+access+cloud+logs)
--   [Log Tools app](/Apps/List+of+apps/Log+Tools+app)
-:::
-
 Magnolia Cloud integrates with
 [](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Monitoring+and+logging)
 [Datadog for monitoring and

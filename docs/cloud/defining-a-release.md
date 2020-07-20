@@ -2,15 +2,6 @@
 title: Defining a release
 ---
 
-::: {.infobox}
-Related topics
-
--   [Installing a
-    snapshot](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+snapshot)
--   [Installing a release in
-    UAT](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+UAT)
-:::
-
 A
 [release](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#Siterelease)
 wraps the latest changes in the Integration environment in preparation

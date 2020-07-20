@@ -2,18 +2,6 @@
 title: Installing a release in UAT
 ---
 
-::: {style="overflow: hidden; float: right;"
-atlassian-macro-output-type=\" BLOCK \" .menu float=\" right \"} Related
-topics
-
--   [Installing a
-    snapshot](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+snapshot)
--   [Defining a
-    release](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Defining+a+release)
--   [Installing a release in
-    Live](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+Live)
-    :::
-
 Once a release has been
 [defined](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Defining+a+release)
 it can be installed in the UAT (User Acceptance Testing) or the Live

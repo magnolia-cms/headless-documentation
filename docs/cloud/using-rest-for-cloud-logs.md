@@ -2,14 +2,6 @@
 title: Using REST to access cloud logs
 ---
 
-::: {.infobox}
-Related topics:
-
--   [Managing cloud log
-    levels](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Monitoring+and+logging/Managing+cloud+log+levels)
--   [Log Tools app](/Apps/List+of+apps/Log+Tools+app)
-:::
-
 This page describes the `logs` endpoint, which can be used to access
 Magnolia cloud instance logs. For viewing and managing the logs via the
 Cockpit, see the [Managing cloud log

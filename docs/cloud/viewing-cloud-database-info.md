@@ -5,12 +5,6 @@ title: Viewing cloud database information
 This page explains how to view the size of your Relational Database
 Service (RDS) linked to your cloud-based Magnolia package.
 
-::: {.infobox}
-Related topics:
-
--   [Cockpit](/Magnolia+Cloud/Cockpit)
-:::
-
 To view your database information:
 
 -   In the Package overview page, click **Manage environments** in the

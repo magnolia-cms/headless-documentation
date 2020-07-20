@@ -2,10 +2,11 @@
 title: Magnolia cockpit concepts
 ---
 
+<!-- This page contains multiple includes that neeed to be sorted. -->
+
 This pages explains how the different elements you see in the cockpit
 fit together:
 
-[](!toc)
 
 Cockpit
 =======

@@ -2,15 +2,6 @@
 title: Multisite in Magnolia in the cloud
 ---
 
-::: {.infobox}
-Related topics in Magnolia documentation
-
--   [Site definition](/Templating/Site+definition)
--   [Multisite module](/Modules/List+of+modules/Multisite+module)
--   [How to use
-    Multisite](/Templating/Site+definition/How+to+use+Multisite)
-:::
-
 ```{=html}
 <!--
 The [Multisite module](/Modules/List+of+modules/Multisite+module) allows you to administer multiple websites from a single Magnolia subscription package.

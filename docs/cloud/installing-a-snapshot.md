@@ -2,15 +2,6 @@
 title: Installing a snapshot
 ---
 
-::: {.infobox}
-Related topics
-
--   [Developing for Magnolia in the
-    cloud](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud)
--   [Defining a
-    release](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Defining+a+release)
-:::
-
 This page explains how to retrieve the light development changes [pushed
 to the remote Git
 repository](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud/Committing+and+pushing+to+the+remote+Magnolia+Git+repository)

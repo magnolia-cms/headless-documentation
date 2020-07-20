@@ -2,16 +2,6 @@
 title: Protecting environments
 ---
 
-::: {.infobox}
-Related topics:
-
--   [Cockpit](/Magnolia+Cloud/Cockpit)
--   [Tearing down an
-    environment](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Tearing+down+an+environment)
--   [Upgrading Magnolia in the
-    cloud](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Upgrading+Magnolia+in+the+cloud)
-:::
-
 This page explains how to protect your environments in your cloud-based
 Magnolia package. You may want to do this to prevent them from being
 unintentionally [torn

@@ -2,14 +2,6 @@
 title: Cloud user management
 ---
 
-::: {.infobox}
-Related topics:
-
--   [Security](/Administration/Security)
--   [Group and role
-    strategies](/Administration/Security/Group+and+role+strategies)
-:::
-
 When you subscribe to Magnolia Cloud, we provide you with login
 credentials to access both the cockpit and the cloud-based Magnolia
 instances in each environment.

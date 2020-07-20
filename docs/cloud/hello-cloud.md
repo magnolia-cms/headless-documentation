@@ -2,13 +2,6 @@
 title: Hello-cloud - a development tutorial
 ---
 
-::: infobox
-Related topics
-
-* [Developing for Magnolia in the cloud](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud)
-* [Cockpit](/Magnolia+Cloud/Cockpit)
-:::
-
 ![](cloudy_.gif){.inline} In this tutorial you will:
 
 * In [Part A](#A)

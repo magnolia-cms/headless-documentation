@@ -5,13 +5,6 @@ title: Configuring domain redirect rules
 This page explains how to configure a root domain redirect rule for your
 cloud-based Magnolia package.
 
-::: {.infobox}
-Related topics:
-
--   [Cockpit](/Magnolia+Cloud/Cockpit)
--   [Multisite in Magnolia in the
-    cloud](/Magnolia+Cloud/Supported+modules+in+the+cloud/Multisite+in+Magnolia+in+the+cloud)
-:::
 
 You can change your root domain to use different subdomains if so
 required. For example, you could redirect abc.com to abc.net.

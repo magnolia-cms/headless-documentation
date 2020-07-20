@@ -2,16 +2,6 @@
 title: Cloud domains and certificates
 ---
 
-::: {.infobox}
-Related topics:
-
--   [Cockpit](/Magnolia+Cloud/Cockpit)
--   [Multisite in Magnolia in the
-    cloud](/Magnolia+Cloud/Supported+modules+in+the+cloud/Multisite+in+Magnolia+in+the+cloud)
--   [Configuring domain redirect
-    rules](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Configuring+domain+redirect+rules)
-:::
-
 Once you have received your subscription package information, it is
 important to understand how domains and certificates are managed in
 Magnolia Cloud.

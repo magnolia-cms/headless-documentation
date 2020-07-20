@@ -5,14 +5,6 @@ title: Setting up a new environment
 This page explains how to add a new environment to your cloud-based
 Magnolia package.
 
-::: {.infobox}
-Related topics:
-
--   [Cockpit](/Magnolia+Cloud/Cockpit)
--   [Tearing down an
-    environment](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Tearing+down+an+environment)
-:::
-
 You may only have one environment of each type at any given time.
 Therefore, if an environment of the same type already exists, you have
 to [tear it

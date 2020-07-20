@@ -2,17 +2,8 @@
 title: Cockpit
 ---
 
-::: infobox
-Related topics:
-
-* [Magnolia cockpit concepts](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts) - Explains how the different elements mentioned in this page fit together.
-* [Understanding cockpit notifications](/Magnolia+Cloud/Cockpit/Understanding+cockpit+notifications)
-* [Understanding activity logs](/Magnolia+Cloud/Cockpit/Understanding+activity+logs)
-:::
-
 The Magnolia cockpit is the central point of access to all functionality provided by Magnolia in the cloud. This page gives you a brief overview of the main screens in the cockpit and what actions can be performed.
 
-[](!toc)
 
 # Logging in
 
@@ -24,7 +15,7 @@ Once you have logged in, you can manage your user settings by clicking on your n
 
 You are logged out automatically after 30 minutes of inactivity for security reasons.
 
-# []{#sub-package-overview}Subscription packages
+# Subscription packages
 
  Welcome! The first page you will see upon logging in is the subscription packages page. It shows the package created for you by Magnolia and its status.
 

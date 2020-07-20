@@ -2,12 +2,6 @@
 title: Managing environments using the Magnolia cockpit
 ---
 
-::: infobox
-Related topics:
-
-[](!children)
-:::
-
 In this section and its subpages, you learn how to manage environments.
 
 An environment consists of one or several *[spaces](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#space)*, which group together related functionality needed to build or deliver a site. The systems that a space actually contains and how they are connected is defined by the *[space's setup](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#space-setup)*. A space is a container for one or more instances of Magnolia.

@@ -2,14 +2,6 @@
 title: Upgrading Magnolia in the cloud
 ---
 
-::: {.infobox}
-Related topics:
-
--   [Releases](/Releases)
--   [Backing up and
-    restoring](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Backing+up+and+restoring)
-:::
-
 When a new version of Magnolia is released and available on the Cloud,
 you can upgrade your cloud environments directly from the cockpit.
 
