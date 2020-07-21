@@ -31,8 +31,8 @@ the Magnolia Maven Archetype.
 Usage
 -----
 
-::: {.codebox}
-``` {.bash}
+:::{.codebox}
+```{.bash}
 mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=https://nexus.magnolia-cms.com/content/groups/public/
 
 ...

@@ -26,7 +26,7 @@ You are logged out automatically after 30 minutes of inactivity for security rea
 * View your package and its current status. Click on the plus sign icon to see details about the status of the package.
 * Click **Show packageoverview**to access the [package overview](#package-overview).
 
-::: info
+:::info
   When Magnolia is conducting a support or maintenance operation requiring downtime, you see a message indicating that your subscription package is temporarily in [maintenance mode](/Support/Support+for+Magnolia+cloud+customers#cloud-maintenance) here.
 :::
 
