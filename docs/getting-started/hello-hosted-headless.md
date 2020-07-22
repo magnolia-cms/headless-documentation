@@ -70,13 +70,13 @@ Let's build a headless app, shall we?
 
 Light modules are a slim way to configure Magnolia. They are just a directory of files following a set of conventions. 
 
-The system picks up any changes to the files and immediately implements tne changes.
+The system picks up any changes to the files and immediately implements the changes.
 
-In your terminal, go into the `spa-website-lm/light-modules` directory.
+In your terminal, go into the `light-modules` directory.
 
 Run:
 ```
-mgnl create-light-module basic-tours-lm
+mgnl create-light-module basic-trips-lm
 ```
 Have a look at the contents of the directory it created.
 
@@ -96,12 +96,12 @@ Have a look at the contents of the directory it created.
 
 What we have just described is our Content Model. It's the contract between developers and marketers to create their website.
 
-With Magnolia CMS we describe the model of content with "Content Types". Implementing content types is very developer friendly, just describe the type in a Yaml file.
+In Magnolia we define the model of content with "Content Types". Implementing content types is very developer friendly, just describe the type in a Yaml file.
 
-Go into the new `basic-tours-lm` directory.
+Go into the new `basic-trips-lm` directory.
 
 ```
-cd basic-tours-lm
+cd basic-trips-lm
 ```
 
 Use the CLI to create a new Content Type
@@ -218,9 +218,9 @@ subApps:
 
 ## Create a REST Endpoint
 
-Inside `basic-tours-lm` , create a `restEndpoints` directory, with a `delivery` directory under that.
+Inside `basic-trips-lm` , create a `restEndpoints` directory, with a `delivery` directory under that.
 
-Result: `basic-tours-lm/restEndpoints/delivery`.
+Result: `basic-trips-lm/restEndpoints/delivery`.
 
 In that location, create a file named (you guessed it) `trips.yaml` with the following content:
 
@@ -252,31 +252,51 @@ references:
 
 Double check what you have changed.
 ```
+cd ..
 git status
 ```
 
-Commit and push your change to git.
+Add all changes, commit, and push your change to git.
 ```
-git commit -a -m "Add 'trips' content type, app, endpoint."
+git add --all
+git commit -m "Add 'trips' content type, app, endpoint."
 git push
 ```
 
-To see your new `Trips` app, log out and log back in to your hosted Magnolia Author instance, and press the grid icon in the header.
+To see your new `Trips` app, log out (Menu in the upper right-hand corner) and log back in to your hosted Magnolia Author instance.
+(If you get a blank screen when you log out, simply visit https://magnolia-trials.com.)
+Once logged in, press the grid icon in the header. Your Trips app is in the app launcher!
 
 Now, open your Trips app, and go ahead and create a few trips. (Have a dream vacation in mind? :)
 
+> Don't see the Trips app? Double check that you have created the files as mentioned above. You should have a directory structure like this:
+- light-modules
+  - basic-trips-lm
+    - apps
+      - trips.yaml
+    - contentTypes
+      - trips.yaml
+    - restEndpoints
+      - delivery
+        - trips.yaml
+    - ...
+
 
 ## Test REST 
+
 - Open a new browser tab
 - Go to url: [YOUR_AUTHOR_URL]/.rest/delivery/trips
 - You can see the JSON
 
 Now try:
 - Go to url: [YOUR_AUTHOR_URL]/.rest/delivery/trips/?limit=100&orderBy=mgnl:lastModified%20desc
-- (`limit` parameter. Endpoints limit to 10 results by default.)
-- (`orderBy` parameter. You can order on any property.)
+  - `limit` parameter. Endpoints limit to 10 results by default.
+  - `orderBy` parameter. You can order on any property.
 
-For published content, just use [YOUR_PUBLIC_URL] instead of [YOUR_AUTHOR_URL].
+For published content, just use [YOUR_PUBLIC_URL] instead of [YOUR_AUTHOR_URL] in the above links.
+
+Did you get an empty result set? Then go back to your `Trips` app, select an item, and use the `Publish` action. (You may need to scroll down in the Action Bar to find it.)
+
 
 > **More to read:** 
 > [Delivery Endpoint Explorer](https://hd.magnolia-cms.com/api-explorer/)
@@ -294,7 +314,7 @@ We have seen how easy it is to get started.
 
 In this section we complete the story with a simple client 
 
-> Do you already have a frontend or client project in mind? Then feel free to skip this section and go ahead and try tweaking that project to consume the `trips` endpoint. 
+> Do you already have a frontend or client project in mind? Then feel free to skip this section and go ahead and change your own project to consume the `trips` endpoint. 
 
 
 Let's build the simplest website.
@@ -303,7 +323,7 @@ Let's build the simplest website.
 
 Create an `index.html` file anywhere on your computer. 
 
-For example you could put it in your `Magnolia-Trial` directory, or in the `spa-website-demo/_dev` directory if you'd like to have it checked into your git project. 
+For example you could put it in your `Magnolia-Trial` directory, or in the `_dev` directory if you'd like to have it checked into your git project. 
 
 
 ### Write the client
@@ -321,8 +341,8 @@ Edit index.html and copy in the following code:
   </head>
   <body>
     <div class="jumbotron">
-      <h1 class="display-4">Magnolia Tours</h1>
-      <p class="lead">List of all Tours</p>
+      <h1 class="display-4">Magnolia Trips</h1>
+      <p class="lead">List of all Trips</p>
     </div>
     <div class="container">
       <div class="card-columns tours"><!-- placeholder for results --></div>
@@ -334,13 +354,14 @@ Edit index.html and copy in the following code:
     <script>
       (function($) {
 
-        const ENDPOINT = "[YOUR_AUTHOR_URL]/.rest/delivery/tours/?limit=100&orderBy=mgnl:lastModified%20desc";
+        const ENDPOINT = "[YOUR_AUTHOR_URL]/.rest/delivery/trips/?limit=100&orderBy=mgnl:lastModified%20desc";
         const IMAGE_BASE = '[YOUR_AUTHOR_URL]';
 
         $.get(ENDPOINT, function(data) {
           $(".tours").append(data.results.map((item)=>`
                   <div class="card">
-                    <img src="${IMAGE_BASE + item.image.renditions['480x360'].link}" class="card-img-top" alt="...">
+                    <img src="${IMAGE_BASE + (item.image ? item.image.renditions['480x360'].link : '')}" class="card-img-top" alt="...">
+                    
                     <div class="card-body">
                       <h5 class="card-title">${item.name}</h5>
                       <p class="card-text">${item.description}</p>
@@ -353,7 +374,7 @@ Edit index.html and copy in the following code:
 </html>
 ```
 
-In the page, replace [YOUR_AUTHOR_URL] with the actual URL.
+In the page, replace the [YOUR_AUTHOR_URL] placeholders with your actual Author URL.
 
 ### Run the frontend
 
@@ -361,12 +382,40 @@ Just open the `index.html` file in a web browser, for example by double-clicking
 
 (You could also place the file on any web server.)
 
+### CORS
+
+Don't see any trips? Don't worry, you were doomed to fail. :)
+Use your browser's developer tools and check out the console. CORS, right?
+
+We need to open CORS on the server.
+
+- In Magnolia, type `filters` into the Find Bar at the top.
+- Click on the first result. (It should include `/server/filters/)  
+  - The `Configuration` app opens, and  `/server/filters` is selected.
+- Click the `Import` Action, you might have to scroll down in the Action Bar.
+- Click `Upload` and select the `_dev/config.server.filters.addCORSHeaders.xml` file from your repository.
+- Click `Import File`. 
+  - The `addCorsHeaders` item is displayed and selected.
+
+- Now, click the `Move` action.
+- Select `uriSecurity` (a few items up.)
+- Click the `Move After` button.
+
+Now refresh your browser tab with your client app.
+The trips are rendered!
+(If not, check the browser developer tools again for hints, especially the `Network` tool.)
+
+
 ### Permissions for Images
 
 What? No images displaying? We need to allow anonymous access to the image urls since we are running on the Author instance.
 
-* Open the [Security app]([YOUR_AUTHOR_INSTANCE]/.magnolia/admincentral#app:security:roles;/anonymous:treeview:), open the `Roles` tab, and edit the `anonymous` role. 
-* Go to `Web access` tab, click `Add new`and enter path `/.imaging*` set to GET.
+(If you do see images, it's because you are logged in as a superuser to Magnolia. Try opening your client app in another browser.)
+
+* In Magnolia, click the grid icon at the top, and open the `Security` app.
+* Open the `Roles` tab, and edit the `anonymous` role. 
+* Go to the `Web access` tab. 
+* Click `Add new` and enter path `/.imaging*` set to `GET`.
 
 ![Image Access for Anonymous](/assets/README-security-anonymous-imaging.png)
 
@@ -378,5 +427,5 @@ You've built a client for your Headless CMS!
 
 ## Next Steps / FAQ
 
-Next, read the magnolia-trials.com service [FAQ & Next Steps](/docs/getting-started/hosted-faq) to review and choose your further learning path.
+Next, read the __magnolia-trials.com__ [FAQ & Next Steps](/docs/getting-started/hosted-faq) to review, and to choose your learning path.
 

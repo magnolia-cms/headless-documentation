@@ -33,7 +33,9 @@ Try it now.
 
 *   In your editor, open: `/light-modules/spa-website-lm/contentTypes/tour.yaml`
 *   Change `label: Description` to `label: Summary`, and save.
-*   Commit and push your change to git.
+*   In your terminal 'cd' into the repository directory.
+
+Commit and push your change to git.
 ```
 git commit -a -m "Changed tours label."
 git push
