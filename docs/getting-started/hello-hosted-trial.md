@@ -60,7 +60,7 @@ We'll start to cover this in the next tutorial.
 
 ## Next Steps
 
-Next, follow the [Headless Tutorial](/docs/getting-started/hello-headless) to quickly level-up on headless development with Magnolia.
+Next, follow the [Headless Tutorial](/docs/getting-started/hello-hosted-headless) to quickly level-up on headless development with Magnolia.
 
 
 
