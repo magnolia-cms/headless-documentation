@@ -92,7 +92,7 @@ It's headless, but with a *great authoring experience*. Enable authors to edit y
 
 This is the tutorial for a minimal SPA Editing project. Great starter project.
 
-[_Hello Magnolia SPA_](hello-headless.md)
+[_Hello Magnolia SPA_](hello-spa.md)
 
 #### Hello Magnolia
 

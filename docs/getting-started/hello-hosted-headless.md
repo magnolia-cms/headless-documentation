@@ -378,5 +378,5 @@ You've built a client for your Headless CMS!
 
 ## Next Steps / FAQ
 
-Next, review the magnolia-trials.com service [FAQ & Next Steps](/docs/getting-started/hosted-faq) to review and choose your further learning path.
+Next, read the magnolia-trials.com service [FAQ & Next Steps](/docs/getting-started/hosted-faq) to review and choose your further learning path.
 
