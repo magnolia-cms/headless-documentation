@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 ## Get Started with the Hosted Trial
 
-Let's take Magnolia for a spin. We'll cover how to work with your new server via the provisioned git repository, and we'll get a local Magnolia installed in order to get the best developer experience.
+Let's take Magnolia for a spin. We'll cover how to work with your new server via the provisioned git repository.
 
 ## First commit
 
@@ -31,7 +31,7 @@ This repository is how you make changes to your hosted Magnolia instance.
 
 Try it now. 
 
-*   In your editor, open: `/light-modules/spa-website-lm/contentTypes/tours.yaml`
+*   In your editor, open: `/light-modules/spa-website-lm/contentTypes/tour.yaml`
 *   Change `label: Description` to `label: Summary`, and save.
 *   Commit and push your change to git.
 ```
@@ -47,6 +47,7 @@ git push
 Now you know how to deploy your changes to your hosted __magnolia-trials.com__ instance.
 :::
 
+## 
 
 ## Create new projects
 
