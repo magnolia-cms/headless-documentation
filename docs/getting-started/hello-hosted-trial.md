@@ -35,7 +35,7 @@ Try it now.
 *   Change `label: Description` to `label: Summary`, and save.
 *   Commit and push your change to git.
 ```
-git commit -a -m"Changed tours label."
+git commit -a -m "Changed tours label."
 git push
 ```
 *   Login to your hosted Magnolia author instance, and close the Tours app if it is open.    
