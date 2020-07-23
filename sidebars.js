@@ -43,6 +43,7 @@ module.exports = {
             type: 'category',
             label: 'Developing for Magnolia Cloud',
             items: [
+              'cloud/developing-for-magnolia-in-the-cloud',
               'cloud/creating-custom-cloud-bundles',
               'cloud/setting-up-local-git-repo',
               'cloud/setting-up-local-bundle',
@@ -54,6 +55,7 @@ module.exports = {
             type: 'category',
             label: 'Installing updates from the Cockpit',
             items: [
+              'cloud/installing-updates-in-cockpit',
               'cloud/installing-a-snapshot',
               'cloud/defining-a-release',
               'cloud/installing-a-UAT-release',

@@ -15,11 +15,10 @@ If you want to access Magnolia cloud instance logs and integrate them
 with other external tools, use the [REST API `logs`
 endpoint](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Monitoring+and+logging/Using+REST+to+access+cloud+logs).
 
-::: {.info}
+:::tip
 The log displayed is the `catalina.out` log.
 :::
 
-[](!toc)
 
 Setting log levels
 ==================
@@ -42,7 +41,7 @@ To change the log levels for your running instances:
     in question and looking in **Tools** **\> Log Tools** app **\> Log
     Levels** tab.
 
-::: {.tip}
+:::tip
 If the Log Tools app is open when you change the log levels in the
 Cockpit, you must close the app and open it again to see your changes
 reflected.

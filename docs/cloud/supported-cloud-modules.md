@@ -4,9 +4,7 @@ title: Supported modules in the cloud
 
 This page describes the supported features of Magnolia Cloud.
 
-[](!toc)
-
-# Magnolia Cloud bundle variants []{#cloud-bundle}
+## Magnolia Cloud bundle variants
 
 Magnolia offers two Cloud bundle variants to suit the needs of our customers and partners.
 
@@ -35,120 +33,102 @@ Your site is hosted in Magnolia Cloud and you or your chosen Partner manages the
 Our experienced Services team is available to provide best practices and help you onboard to our cloud.
 
 ## DX Core modules
-<table>
-<tr>
-<th>
-A-G
-</th>
-<th>
-H-Pe
-</th>
-<th>
-Pu-Z
-</th>
-</tr>
-<tr>
-<td>
-[About App module](/Modules/List+of+modules/About+App+module)
 
-[Advanced cache modules](/Modules/List+of+modules/Advanced+cache+modules)
+* [About App module](/Modules/List+of+modules/About+App+module)
 
-[Cache modules](/Modules/List+of+modules/Cache+modules)
+* [Advanced cache modules](/Modules/List+of+modules/Advanced+cache+modules)
 
-[Campaign Publisher module](/Modules/List+of+modules/Campaign+Publisher+module)
+* [Cache modules](/Modules/List+of+modules/Cache+modules)
 
-[Categorization module](/Modules/List+of+modules/Categorization+module)
+* [Campaign Publisher module](/Modules/List+of+modules/Campaign+Publisher+module)
 
-[Content Dependencies module](/Modules/List+of+modules/Content+Dependencies+module)
+* [Categorization module](/Modules/List+of+modules/Categorization+module)
 
-[Content Editor module](/Modules/List+of+modules/Content+Editor+module)
+* [Content Dependencies module](/Modules/List+of+modules/Content+Dependencies+module)
 
-[Content Importer module](/Modules/List+of+modules/Content+Importer+module)
+* [Content Editor module](/Modules/List+of+modules/Content+Editor+module)
 
-[Content Tags module](/Modules/List+of+modules/Content+Tags+module)
+* [Content Importer module](/Modules/List+of+modules/Content+Importer+module)
 
-[Content Translation Support module](/Modules/List+of+modules/Content+Translation+Support+module)
+* [Content Tags module](/Modules/List+of+modules/Content+Tags+module)
 
-[Content Types module](/Modules/List+of+modules/Content+Types+module)
+* [Content Translation Support module](/Modules/List+of+modules/Content+Translation+Support+module)
 
-[Definitions App module](/Modules/List+of+modules/Definitions+App+module)
+* [Content Types module](/Modules/List+of+modules/Content+Types+module)
 
-[Device Detection module](/Modules/List+of+modules/Device+Detection+module)
+* [Definitions App module](/Modules/List+of+modules/Definitions+App+module)
 
-[Diff module](/Modules/List+of+modules/Diff+module)
+* [Device Detection module](/Modules/List+of+modules/Device+Detection+module)
 
-[Digital Asset Management module](/Modules/List+of+modules/Digital+Asset+Management+module)
+* [Diff module](/Modules/List+of+modules/Diff+module)
 
-[Form module](/Modules/List+of+modules/Form+module)
+* [Digital Asset Management module](/Modules/List+of+modules/Digital+Asset+Management+module)
 
-[Groovy module](/Modules/List+of+modules/Groovy+module)
-</td>
-<td>
-[High performance caching modules](/Modules/List+of+modules/High+performance+caching+modules)
+* [Form module](/Modules/List+of+modules/Form+module)
 
-[Imaging module](/Modules/List+of+modules/Imaging+module)
+* [Groovy module](/Modules/List+of+modules/Groovy+module)
 
-[JavaScript Models module](/Modules/List+of+modules/JavaScript+Models+module)
+* [High performance caching modules](/Modules/List+of+modules/High+performance+caching+modules)
 
-[JCR Tools module](/Modules/List+of+modules/JCR+Tools+module)
+* [Imaging module](/Modules/List+of+modules/Imaging+module)
 
-[LDAP Connector module](/Modules/List+of+modules/LDAP+Connector+module)
+* [JavaScript Models module](/Modules/List+of+modules/JavaScript+Models+module)
 
-[Log Tools module](/Modules/List+of+modules/Log+Tools+module)
+* [JCR Tools module](/Modules/List+of+modules/JCR+Tools+module)
 
-[Mail module](/Modules/List+of+modules/Mail+module)
+* [LDAP Connector module](/Modules/List+of+modules/LDAP+Connector+module)
 
-[Marketing Tags module](/Modules/List+of+modules/Marketing+Tags+module)
+* [Log Tools module](/Modules/List+of+modules/Log+Tools+module)
 
-[Messages App module](/Modules/List+of+modules/Messages+App+module)
+* [Mail module](/Modules/List+of+modules/Mail+module)
 
-[MTE module](/Modules/List+of+modules/MTE+module)
+* [Marketing Tags module](/Modules/List+of+modules/Marketing+Tags+module)
 
-[MTK module](/Modules/List+of+modules/MTE+module/MTK+module)
+* [Messages App module](/Modules/List+of+modules/Messages+App+module)
 
-[Multisite module](/Modules/List+of+modules/Multisite+module)
+* [MTE module](/Modules/List+of+modules/MTE+module)
 
-[Pages module](/Modules/List+of+modules/Pages+module)
+* [MTK module](/Modules/List+of+modules/MTE+module/MTK+module)
 
-[Password Manager module](/Modules/List+of+modules/Password+Manager+module)
+* [Multisite module](/Modules/List+of+modules/Multisite+module)
 
-[Periscope module](/Modules/List+of+modules/Periscope+module)
+* [Pages module](/Modules/List+of+modules/Pages+module)
 
-[Periscope Result Ranker module](/Modules/List+of+modules/Periscope+Result+Ranker+module)
+* [Password Manager module](/Modules/List+of+modules/Password+Manager+module)
 
-[Personalization module](/Modules/List+of+modules/Personalization+module)
-</td>
-<td>
-[Publishing module](/Modules/List+of+modules/Publishing+module)
+* [Periscope module](/Modules/List+of+modules/Periscope+module)
 
-[Publishing Transactional module](/Modules/List+of+modules/Publishing+Transactional+module)
+* [Periscope Result Ranker module](/Modules/List+of+modules/Periscope+Result+Ranker+module)
 
-[Resources module](/Modules/List+of+modules/Resources+module)
+* [Personalization module](/Modules/List+of+modules/Personalization+module)
 
-[REST Client module](/Modules/List+of+modules/REST+Client+module)
+* [Publishing module](/Modules/List+of+modules/Publishing+module)
 
-[REST module](/Modules/List+of+modules/REST+module)
+* [Publishing Transactional module](/Modules/List+of+modules/Publishing+Transactional+module)
 
-[RSS Aggregator module](/Modules/List+of+modules/RSS+Aggregator+module)
+* [Resources module](/Modules/List+of+modules/Resources+module)
 
-[Scheduler module](/Modules/List+of+modules/Scheduler+module)
+* [REST Client module](/Modules/List+of+modules/REST+Client+module)
 
-[Security App module](/Modules/List+of+modules/Security+App+module)
+* [REST module](/Modules/List+of+modules/REST+module)
 
-[Site module](/Modules/List+of+modules/Site+module)
+* [RSS Aggregator module](/Modules/List+of+modules/RSS+Aggregator+module)
 
-[SiteMesh module](/Modules/List+of+modules/High+performance+caching+modules/SiteMesh+module)
+* [Scheduler module](/Modules/List+of+modules/Scheduler+module)
 
-[Soft Locking module](/Modules/List+of+modules/Soft+Locking+module)
+* [Security App module](/Modules/List+of+modules/Security+App+module)
 
-[Tools module](/Modules/List+of+modules/Tools+module)
+* [Site module](/Modules/List+of+modules/Site+module)
 
-[Virtual URI module](/Modules/List+of+modules/Virtual+URI+module)
+* [SiteMesh module](/Modules/List+of+modules/High+performance+caching+modules/SiteMesh+module)
 
-[Workflow module](/Modules/List+of+modules/Workflow+module)
-</td>
-</tr>
-</table>
+* [Soft Locking module](/Modules/List+of+modules/Soft+Locking+module)
+
+* [Tools module](/Modules/List+of+modules/Tools+module)
+
+* [Virtual URI module](/Modules/List+of+modules/Virtual+URI+module)
+
+* [Workflow module](/Modules/List+of+modules/Workflow+module)
 
 ## Connector Packs
 
@@ -162,7 +142,7 @@ Pu-Z
 
 * [Live Copy](/Special+Features/Live+Copy)
 
-# Cloud offer limitations
+## Cloud offer limitations
 
 The Magnolia cloud offer includes the [Configuration app](/Apps/List+of+apps/Configuration+app) that allows you to configure your modules.
 

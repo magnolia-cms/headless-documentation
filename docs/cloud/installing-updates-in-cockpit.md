@@ -2,7 +2,7 @@
 title: Installing updates using the Magnolia cockpit
 ---
 
- After developing on the local file system and [pushing your local development work](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud/Committing+and+pushing+to+the+remote+Magnolia+Git+repository) to the remote Magnolia Git repository, move to the Magnolia Cockpit and retrieve your work.
+After developing on the local file system and [pushing your local development work](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud/Committing+and+pushing+to+the+remote+Magnolia+Git+repository) to the remote Magnolia Git repository, move to the Magnolia Cockpit and retrieve your work.
 
 To do so, go to the **Install an update** page in the Magnolia [cockpit](/Magnolia+Cloud/Cockpit).
 
@@ -10,17 +10,16 @@ To do so, go to the **Install an update** page in the Magnolia [cockpit](/Magnol
 
 Here you can:
 
-* [Install a snapshot](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+snapshot).
-* [Define a release](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Defining+a+release).
-* [Install a release in the UAT environment](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+UAT) or in [the Live environment](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+Live).
-* [Copy content for testing](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Copying+content+for+testing).
-* [Manage the version of Magnolia used in your environments](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Upgrading+Magnolia+in+the+cloud).
+* [Install a snapshot](/docs/cloud/installing-a-snapshot).
+* [Define a release](/docs/cloud/defining-a-release).
+* [Install a release in the UAT environment](/docs/cloud/installing-a-UAT-release) or in [the Live environment](/docs/cloud/installing-a-live-release).
+* [Copy content for testing](/docs/cloud/copying-contet-for-testing).
+* [Manage the version of Magnolia used in your environments](/docs/cloud/managing-environments-in-cockpit).
 
-::: note
+:::note
   The options available in **Install an update** depend on the current state of your setup:
-
-* You cannot install a snapshot or a release until you have [set up a new environment](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Setting+up+a+new+environment).
-* If there is no [snapshot installed](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+snapshot), you cannot define and install a release.
+  * You cannot install a snapshot or a release until you have [set up a new environment](/docs/cloud/setting-up-new-environment).
+  * If there is no snapshot installed, you cannot define and install a release.
 :::
 
 

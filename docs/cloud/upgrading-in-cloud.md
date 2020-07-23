@@ -5,7 +5,7 @@ title: Upgrading Magnolia in the cloud
 When a new version of Magnolia is released and available on the Cloud,
 you can upgrade your cloud environments directly from the cockpit.
 
-::: {.note}
+:::note
 We urge all cloud customers to upgrade their projects to the latest
 Magnolia [LTS release](/Support/End-of-life+policy) within 60 days of
 the version release date. All *new* deployments must be based on the
@@ -18,16 +18,13 @@ the backup is stored or restore it to roll back the upgrade.
 Alternatively, you can delete the upgrade backup manually to be able to
 tear down the Live environment again.
 
-[](!toc)
 
-Upgrading the version of Magnolia
-=================================
+## Upgrading the version of Magnolia
 
 Before upgrading, we recommend you read the [release notes](/Releases)
 for the version of Magnolia you are upgrading to.
 
-::: {.tip}
-**Tips**
+:::tip
 
 -   Begin by upgrading your Integration and UAT environments. Then test
     the new features available, check your configuration and content,
@@ -47,16 +44,16 @@ To upgrade Magnolia in the cockpit:
 
 1.  In the Package overview page, click **Install an update** in the
     Installed releases section.
-2.  Click **Change the version of Magnolia used in your environments**:\
-    ![](/assets/cloud/cloud-change-magnolia-version-action.png){width="600"}
+2.  Click **Change the version of Magnolia used in your environments**:
+    ![](/assets/cloud/cloud-change-magnolia-version-action.png)
 3.  Select the environment you want to upgrade: Live, UAT or
-    Integration.\
+    Integration.
     Note that we recommend starting with upgrading the integration
     environment and testing before moving on to UAT and, finally Live.
 4.  Select the version of Magnolia you want to upgrade to. If nothing is
     displayed, this means there are no new versions of Magnolia
     available.
-5.  Confirm the consequences of the upgrade and click **Install**.\
+5.  Confirm the consequences of the upgrade and click **Install**.
     The upgrade process takes some time. As all actions in the cockpit
     are asynchronous, you can click on **OK** before the upgrade is
     complete: the action runs in the background and a notification
@@ -70,14 +67,13 @@ Until the automatic backup is removed, you cannot tear down your
 upgraded environment. If you need to tear down the environment, you can
 [remove the upgrade backup manually](#remove-backup).
 
-[]{#extend-storage}Extending the upgrade backup storage period
-==============================================================
+## Extending the upgrade backup storage period
 
 Every automatic backup of the Live environment is stored for 48 hours.
 You can extend this to 5 days from the Package overview page by clicking
 on the **Extend upgrade backup storage period** link:
 
-![](/assets/cloud/cloud-extend-backup-period.png){width="600"}
+![](/assets/cloud/cloud-extend-backup-period.png)
 
 This link takes you to a wizard where you must confirm the extension you
 requested.
@@ -85,8 +81,7 @@ requested.
 If you need an extension for more than 5 days, please [contact the Cloud
 Helpdesk](https://jira.magnolia-cms.com/servicedesk/customer/portal/6/group/18).
 
-[]{#remove-backup}Deleting the upgrade backup
-=============================================
+## Deleting the upgrade backup
 
 Until the automatic backup is removed, you cannot tear down your
 upgraded environment. If you need to tear down the environment, you can
@@ -96,16 +91,15 @@ To delete an upgrade backup:
 
 1.  In the Package overview page, click **Install an update** in the
     Installed releases section.
-2.  Click **Change the version of Magnolia used in your environments**:\
-    ![](/assets/cloud/cloud-change-magnolia-version-action.png){width="600"}
+2.  Click **Change the version of Magnolia used in your environments**:
+    ![](/assets/cloud/cloud-change-magnolia-version-action.png)
 3.  Select the **Live** environment.
 4.  Click the **Delete the upgrade backup** button.
 5.  Confirm the consequences of the deletion and click **Delete**.
 
 Once the backup is deleted, you can tear down the Live environment.
 
-[]{#restore-backup}Restoring the upgrade backup
-===============================================
+## Restoring the upgrade backup
 
 If you want to roll back the upgrade, you can restore the automatic
 upgrade backup.
@@ -114,13 +108,13 @@ To restore an upgrade backup:
 
 1.  In the Package overview page, click **Install an update** in the
     Installed releases section.
-2.  Click **Change the version of Magnolia used in your environments**:\
-    ![](/assets/cloud/cloud-change-magnolia-version-action.png){width="600"}
+2.  Click **Change the version of Magnolia used in your environments**:
+    ![](/assets/cloud/cloud-change-magnolia-version-action.png)
 3.  Select the **Live** environment.
 4.  Click the **Restore the upgrade backup** button.
 5.  Confirm the consequences of the deletion and click **Restore**.
 
-::: {.note}
+:::note
 If you encounter issues with the upgrade process, please [contact the
 Cloud
 Helpdesk](https://jira.magnolia-cms.com/servicedesk/customer/portal/6/group/18).

@@ -20,7 +20,7 @@ Environments are managed in the **Manage environments** page.
 
 To access this page, in the **Package overview** page, click **Manage environments**.
 
-![](/assets/cloud/Envs-Change-envs-BAR_.png){width=600}
+![](/assets/cloud/Envs-Change-envs-BAR_.png)
 
 From the **Manage environments** page you can:
 
@@ -31,16 +31,11 @@ From the **Manage environments** page you can:
 * [Tear down an environment](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Tearing+down+an+environment)
 * [Configure domain redirect rules](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Configuring+domain+redirect+rules)
 * [Protect environments from being torn down](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Protecting+environments)
-
-::: child _mce_tagged_br
-
 * [Back up and restore](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Backing+up+and+restoring)
 
-:::
+![](/assets/cloud/cloud-manage-environments-all-available.png)
 
-![](/assets/cloud/cloud-manage-environments-all-available.png){width=600}
-
-::: note
+:::note
   The options available in **Manage environments** depend on the current state of your setup:
 
 * If the Live environment is not set up, some actions are disabled.

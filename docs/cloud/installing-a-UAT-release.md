@@ -13,20 +13,20 @@ changes have been tested and accepted in the UAT environment, the
 release can be [installed in the Live
 environment](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+Live).
 
-![](/assets/cloud/mnow-int-uat.png){width="500"}
+![](/assets/cloud/mnow-int-uat.png)
 
 To install a release:
 ---------------------
 
-1.  In **Installed releases** click **Install an update**.\
-    ![](/assets/cloud/InstallUAT1_scope_v2.png){width="600"}
-2.  Click **Install a release**.\
-    ![](/assets/cloud/Install-site-release.png){width="600"}
+1.  In **Installed releases** click **Install an update**.
+    ![](/assets/cloud/InstallUAT1_scope_v2.png)
+2.  Click **Install a release**.
+    ![](/assets/cloud/Install-site-release.png)
 3.  Installing is a four-step process:
     1.  Select the release you want to install and click **Next**.
         Latest versions display first. Select **Other site releases**
-        for a dropdown of earlier versions.\
-        ![](/assets/cloud/pick.png){width="600"}
+        for a dropdown of earlier versions.
+        ![](/assets/cloud/pick.png)
     2.  Select the environment to install in and click **Next**.
         Environments that have not been set up are not available for
         selection.
@@ -54,15 +54,10 @@ To check that the environment is running on the correct release:
     features such as templates, etc. or a stakeholder may check updated
     style, etc. pp.
 
-::: {.warning}
+:::warning
 Always avoid hotfixing problems in the Resources app because the changes
 are not propagated back to your GIT repository.
 :::
-
-Next:
-
-[Installing a release in
-Live](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+release+in+Live)
 
 <!-- ```{=html}
 <!-- Original Confluence content:

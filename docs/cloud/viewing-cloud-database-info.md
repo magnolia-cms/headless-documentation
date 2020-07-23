@@ -9,8 +9,8 @@ To view your database information:
 
 -   In the Package overview page, click **Manage environments** in the
     Environments section.
--   Click **RDS information**.\
-    ![](/assets/cloud/cloud-rds-info-action.png){width="450"}\
+-   Click **RDS information**.
+    ![](/assets/cloud/cloud-rds-info-action.png)
     The RDS information page displays for each environment instance:
     -   **Allocated storage**
     -   **Free storage space**
@@ -19,7 +19,8 @@ To view your database information:
 
 For example:
 
-![](/assets/cloud/loud-rds-info-page.png){width="600"}
+![](/assets/cloud/cloud-rds-info-page.png)
+
 <!-- 
 ```{=html}
 <!-- Original Confluence content:

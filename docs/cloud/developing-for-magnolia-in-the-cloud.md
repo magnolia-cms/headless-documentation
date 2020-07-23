@@ -2,65 +2,66 @@
 title: Developing for Magnolia in the cloud
 ---
 
- This page gives an overview of the Magnolia development cycle for standard and custom bundles.
+This page gives an overview of the Magnolia development cycle for standard and custom bundles.
 
-[](!toc)
+## Standard cloud bundle development workflow
 
-# Standard cloud bundle development workflow
+![](/assets/cloud/mnow-local-dev-overview.png)
 
-![](/assets/cloud/mnow-local-dev-overview.png){width=600}
+:::info
+Depending on your subscription package, the environments available to you may differ.
 
-[/_i/_cloudContext/_cloud+environments+vary](!include)
+For example, you may have only a single Live environment available, or only a UAT and a Live environment. In these cases, you can install a development snapshot directly in the Live or in the UAT environment respectively. 
+:::
 
-## Local development
+### Local development
 
  **Creating new features and functions in your Magnolia *[package](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#glossary-package)*** **starts with local development.** After cloning the remote Git repository linked to your Magnolia subscription package, you install a Magnolia local development bundle on your machine. This is where you develop new features before sending them to the cloud via the Git repository.
 
 Have a look at the prerequisites below before you get started.
 
-[]{#localdevprereqs}
-
-## Working in Magnolia cloud
+### Working in Magnolia cloud
 
 After developing locally and pushing your work to the Magnolia Git repository, log in to the [cockpit](/Magnolia+Cloud/Cockpit) to retrieve your work. As well as providing an overview of your package's status, the cockpit is the starting point for all the actions you can do in Magnolia in the cloud:
 
 * [Install updates using Magnolia](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit) - Create development snapshots and releases to deploy and test new features through the different environments in Magnolia before making your site available to your customers.
 
-> *Continuous delivery is a way to ensure that new configuration, templates and code can be rapidly and safely deployed to production. You deliver every change first to a UAT environment and verify that business applications and services function as expected through testing. Since every change is delivered to the UAT environment using automation in the Magnolia Cloud Cockpit, you have confidence that the application can be deployed to the Live environment exactly the same way, with a push of a button when the business is ready. In the UAT environment, business users can validate your changes with real content cloned from the Live environment.* \
-> *Adapted from Caum, Carl: [Continuous Delivery Vs. Continuous Deployment: What's the Diff?](https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff)*
+*Continuous delivery is a way to ensure that new configuration, templates and code can be rapidly and safely deployed to production. You deliver every change first to a UAT environment and verify that business applications and services function as expected through testing. Since every change is delivered to the UAT environment using automation in the Magnolia Cloud Cockpit, you have confidence that the application can be deployed to the Live environment exactly the same way, with a push of a button when the business is ready. In the UAT environment, business users can validate your changes with real content cloned from the Live environment.* 
+*Adapted from Caum, Carl: [Continuous Delivery Vs. Continuous Deployment: What's the Diff?](https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff)*
+
 
 * [Manage environments in Magnolia](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit) - Create and manage the environments and running instances of Magnolia in the cloud.
 
-## Prerequisites
+### Prerequisites
 
-### Java
+#### Java
 
 Java 1.8 or higher is required to run the Magnolia local development bundle. If you do not know whether you have Java installed or which version you have, please read [get Java](/Getting+started+with+Magnolia/Installing+Magnolia).
 
-### Git
+#### Git
 
 [Git](https://git-scm.com/) is required to develop for Magnolia in the cloud. You need:
 
 * [Git client software](https://git-scm.com/downloads)
 * [Basic Git knowledge](https://git-scm.com/doc)
 
-::: bestpractice
+:::tip
   Magnolia recommends that you develop your light module files using [Magnolia CLI](/Magnolia+CLI).
 :::
 
 See [Setting up a local Git repository](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud/Setting+up+a+local+Git+repository) to get started with your standard bundle development workflow.
 
-# Custom cloud bundle development workflow
+## Custom cloud bundle development workflow
 
 In the case of [*custom* cloud bundle](/Magnolia+Cloud/Supported+modules+in+the+cloud#cloud-bundle) implementations, the development workflow is different. You or your cloud partner create the Magnolia bundle that is deployed to the cloud.
 
-![](/assets/cloud/cloud-custom-dev-overview.png){width=600}
+![](/assets/cloud/cloud-custom-dev-overview.png)
 
 From Magnolia 6.2.1, Magnolia provides a [cloud-specific option](https://git.magnolia-cms.com/projects/BUILD/repos/maven-archetypes/browse/magnolia-cloud-project-archetype/src/main/resources/archetype-resources/README.md) in the [Magnolia Maven Archetype](/Developing/How+to+use+Magnolia+Maven+archetypes) to facilitate the creation of your cloud bundles. The Magnolia Maven Archetype generates a best-practice project skeleton. The Magnolia Cloud Maven Plugin validates and uploads your custom cloud bundle. Once your custom bundle is deployed to the cloud, you can also work with Magnolia Cloud using both Light Development (as described above) and Java custom modules.
 
 See [Creating and deploying custom cloud bundles](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud/Creating+and+deploying+custom+cloud+bundles).
 
-# Hands-on learning
+## Hands-on learning
 
 Try out our end-to-end [Hello-cloud development tutorial](/Magnolia+Cloud/Hello-cloud+-+a+development+tutorial), in which you set up a light module and deploy it in Magnolia.
 

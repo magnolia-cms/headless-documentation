@@ -8,13 +8,10 @@ Cockpit, see the [Managing cloud log
 levels](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Monitoring+and+logging/Managing+cloud+log+levels)
 page.
 
-[](!toc)
 
-Obtaining an authentication token
-=================================
+## Obtaining an authentication token
 
-::: {.warning}
-**Important**
+:::caution
 
 When sending REST requests, make sure you always send them via a secure
 protocol such as HTTPS so that communication with the endpoint is
@@ -32,33 +29,31 @@ token, issue the following `curl` command in bash, where:
     package.
 -   `<cockpit-domain-name>` is the domain name of your Cockpit.
 
-::: {.codebox}
-``` {.bash}
+```bash
 curl -H "X-Auth-Username: <your_username>" -H "X-Auth-Password: <your_password>" -X POST https://<cockpit-domain-name>/authenticate
 ```
-:::
 
 For example:
-<!-- 
-::: {.codebox}
-``` {.bash}
+
+```bash
 curl -H "X-Auth-Username: John" -H "X-Auth-Password: Doe" -X POST https://cockpit.example.com/authenticate
 ```
-::: -->
+
 
 You should get a response like this:
 
-<!-- ::: {.codebox}
+```bash
     {"authToken":"<token-header>.<token-payload>.<token-signature>"}
-::: -->
+```
 
 The token required is this part:
-`<token-header>.<token-payload>.<token-signature>`.
+```bash
+`<token-header>.<token-payload>.<token-signature>`
+```
 
-The request
-===========
+### The request
 
-::: {.info}
+:::info
 Currently Magnolia clouds logs keep a maximum of the last 5 minutes of
 log data or the last 1000 log lines, counted from time-now OR from a log
 record matching the `recordLocator`, if sent in the request.
@@ -325,15 +320,13 @@ Examples
 [GET]{.get} the log from the `public1 uat` instance of the
 `example-abbrev` cloud subscription package:
 
-::: {.codebox}
 Command
 
-``` {.bash}
+```bash
 curl -H "X-Auth-Token:{JWT-token}" -X GET "https://cockpit.example.com/.rest/instances/logs?siteName=example-abbrev&environment=uat&mgnlInstanceName=public1&logMoveDirection=-1"
 ```
 :::
 
-::: {.codebox}
 ``` {.js}
 {
   "logs": [{
@@ -366,15 +359,13 @@ curl -H "X-Auth-Token:{JWT-token}" -X GET "https://cockpit.example.com/.rest/ins
 `[1524820338111102,85740]` log record (Base64-encoded as
 `WzE1MjQ4MjAzMzgxMTExMDIsODU3NDBd` in the URL):
 
-::: {.codebox}
 Command
 
-``` {.bash}
+```bash
 curl -H "X-Auth-Token:{JWT-token}" -X GET "https://cockpit.example.com/.rest/instances/logs?siteName=example-abbrev&environment=uat&mgnlInstanceName=public1&logMoveDirection=-1&recordLocator=WzE1MjQ4MjAzMzgxMTExMDIsODU3NDBd"
 ```
 :::
 
-::: {.codebox}
 ``` {.js}
 {
   "logs": [{

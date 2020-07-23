@@ -11,26 +11,30 @@ all the available cloud environments, after the changes have been tested
 in the Integration environment, they can be included in a release and
 promoted to the UAT environment, and then to the Live environment.
 
-::: {.note}
+:::note
 You cannot install a snapshot or a release until you have [set up a new
 environment](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Setting+up+a+new+environment).
 :::
 
-[/\_i/\_cloudContext/\_cloud+environments+vary](!include)
+:::info
+Depending on your subscription package, the environments available to you may differ.
 
-![](/assets/cloud/mnow-install-snapshot_v2.png){width="400"}
+For example, you may have only a single Live environment available, or only a UAT and a Live environment. In these cases, you can install a development snapshot directly in the Live or in the UAT environment respectively. 
+:::
+
+![](/assets/cloud/mnow-install-snapshot_v2.png)
 
 Install a snapshot
 ==================
 
-1.  In **Installed releases** click **Install an update**.\
-    ![](/assets/cloud/InstallSnap_v2_scope.png){width="600"}
+1.  In **Installed releases** click **Install an update**.
+    ![](/assets/cloud/InstallSnap_v2_scope.png)
 
-2.  Click **Install a development snapshot**.\
-    ![](/assets/cloud/install-snapshot.png){width="600"}
+2.  Click **Install a development snapshot**.
+    ![](/assets/cloud/install-snapshot.png)
 
-3.  Select the Git **Tag** or **Branch** you want to retrieve.\
-    ![](/assets/cloud/cloud-install-release-step1.png){width="600"}
+3.  Select the Git **Tag** or **Branch** you want to retrieve.
+    ![](/assets/cloud/cloud-install-release-step1.png)
 
 4.  Click **Install** to pull changes from the Git repository and apply
     them to the Integration environment.
@@ -53,15 +57,10 @@ To check that the snapshot has been installed correctly:
     resource files, open the **Resource Files** app to check that the
     updates are there.
 
-::: {.warning}
+:::warning
 Always avoid hotfixing problems in the Resources app because the changes
 are not propagated back to your GIT repository.
 :::
-
-Next:
-
-[Defining a
-release](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Defining+a+release)
 
 <!-- ```{=html}
 <!-- Original Confluence content:

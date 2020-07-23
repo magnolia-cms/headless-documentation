@@ -9,7 +9,7 @@ The Magnolia cockpit is the central point of access to all functionality provide
 
 A URL for the cockpit and login details for all the users you requested are provided by Magnolia when you subscribe to Magnolia's cloud offering. Use this information to access the cockpit.
 
-![](/assets/cloud/mnow_login.png){width=500}
+![](/assets/cloud/mnow_login.png)
 
 Once you have logged in, you can manage your user settings by clicking on your name in the top right corner.
 
@@ -19,7 +19,7 @@ You are logged out automatically after 30 minutes of inactivity for security rea
 
  Welcome! The first page you will see upon logging in is the subscription packages page. It shows the package created for you by Magnolia and its status.
 
-![](/assets/cloud/mnow_site_overview.png){width=600}
+![](/assets/cloud/mnow_site_overview.png)
 
  From this page, you can:
 
@@ -34,7 +34,7 @@ You are logged out automatically after 30 minutes of inactivity for security rea
 
 The top banner in the cockpit displays notifications sent to you by Magnolia Helpdesk.
 
-![](/assets/cloud/cloud-cockpit-banner.png){width=600}
+![](/assets/cloud/cloud-cockpit-banner.png)
 
 There are three types of notification:
 
@@ -44,13 +44,13 @@ There are three types of notification:
 
 Click the notifications box to access the [cockpit notifications](/Magnolia+Cloud/Cockpit/Understanding+cockpit+notifications) and manage your messages.
 
-![](/assets/cloud/cloud-cockpit-notifications.png){width=600}
+![](/assets/cloud/cloud-cockpit-notifications.png)
 
 # Package overview
 
  Click **Show package overview** in the subscription packages page to access the package overview page. This page is the access point for all the package administration actions for the cloud-based cloud Magnolia.
 
-  ![](mnow_site_setup.png){width=600}
+  ![](mnow_site_setup.png)
 
 From this page you:
 
@@ -64,13 +64,13 @@ From this page you:
 
 The [activity log](/Magnolia+Cloud/Cockpit/Understanding+activity+logs) displays a log of all major actions triggered from the cockpit providing a single location to see who did what when.
 
-![](5-7-1-cloud-activity-log.png){width=600}
+![](5-7-1-cloud-activity-log.png)
 
 # Environments overview
 
 The package overview page provides an overview of all the *[Environments](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#environment)* and *[Spaces](/Magnolia+Cloud/Cockpit/Magnolia+cockpit+concepts#space)* that have been set up for the package.
 
-![](/assets/cloud/mnow_env-overview.png){width=600}
+![](/assets/cloud/mnow_env-overview.png)
 
 A Magnolia package typically consists of three environments:
 
@@ -95,13 +95,13 @@ From the environments section, you can [Manage your environments](/Magnolia+Clou
 * [Back up](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Backing+up+and+restoring)
 * [Restore](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Backing+up+and+restoring/Recovering+the+Live+environment)
 
-![](cloud-manage-environments-all-available.png){width=600}
+![](cloud-manage-environments-all-available.png)
 
 ## Each environment
 
 Each environment consists of one or several *[spaces](/Glossary#space)*, which separate the environment into larger blocks containing public or author instances of Magnolia. By default, each environment has an Author space and a Public space.
 
-![](/assets/cloud/mnow_each-env.png){width=600}
+![](/assets/cloud/mnow_each-env.png)
 
 For a given environment, you can: []{#edit-content-auth-instance}
 
@@ -128,7 +128,7 @@ You can see the status of your environment from the status icon beside the insta
 
 The package overview page provides information about what has been installed in your package in the Installed releases section.
 
-![](/assets/cloud/mnow_site_release.png){width=600}
+![](/assets/cloud/mnow_site_release.png)
 
 You can view time-stamped releases and [install updates](#install-updates).
 
@@ -136,7 +136,7 @@ You can view time-stamped releases and [install updates](#install-updates).
 
 The **Install an update** page is the access point for developers to retrieve their work and propagate it through the different environments and testing stages before putting it into production.
 
-![](/assets/cloud/mnow_install-update.png){width=600}
+![](/assets/cloud/mnow_install-update.png)
 
 See the following pages for information about how to:
 
@@ -152,7 +152,7 @@ See the following pages for information about how to:
 
 The package overview page displays a list of stakeholders and their contact details in the **People** section.
 
-![](/assets/cloud/mnow_people.png){width=600}
+![](/assets/cloud/mnow_people.png)
 
 # Additional information
 
@@ -162,7 +162,7 @@ A **Logs view URL** link to [the Datadog service for your subscription package](
 
 The **GIT repository** URL for the subscription package is provided: when you [develop locally](/Magnolia+Cloud/Developing+for+Magnolia+in+the+cloud), you must push your configuration changes to this GIT repository so they can be installed in the Integration environment.
 
-![](/assets/cloud/mnow_add-info.png){width=600}
+![](/assets/cloud/mnow_add-info.png)
 
 
 

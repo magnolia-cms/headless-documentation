@@ -8,30 +8,30 @@ UAT](/Magnolia+Cloud/Installing+updates+using+the+Magnolia+cockpit/Installing+a+
 the Live environment. When you install a release in the Live
 environment, that version of the site is made public to your end users.
 
-::: {.tip}
+:::tip
 During the installation of the release in your Live environment, your
 public website remains available.
 :::
 
-![](/assets/cloud/mnow-uat-live_v2.png){width="500"}
+![](/assets/cloud/mnow-uat-live_v2.png)
 
 To install a release:
 ---------------------
 
-1.  In **Installed releases** click **Install an update**.\
-    ![](/assets/cloud/InstallLive1_scope_v2.png){width="600"}
-2.  Click **Install a release**.\
-    ![](/assets/cloud/Install-site-release.png){width="600"}
+1.  In **Installed releases** click **Install an update**.
+    ![](/assets/cloud/InstallLive1_scope_v2.png)
+2.  Click **Install a release**.
+    ![](/assets/cloud/Install-site-release.png)
 3.  Installing is a four-step process:
     1.  Select the release you want to install and click **Next**.
         Latest versions display first. Select **Other releases** for a
-        dropdown of earlier versions.\
-        ![](/assets/cloud/pick.png){width="600"}
+        dropdown of earlier versions.
+        ![](/assets/cloud/pick.png)
     2.  Select the environment to install in and click **Next**.
         Environments that have not been set up are not available for
         selection.
     3.  Confirm the consequences of the installation and click
-        **Install**.\
+        **Install**.
         :warning: Note that if you are installing the release in the
         Live environment, you should make a
         [backup](/Magnolia+Cloud/Managing+environments+using+the+Magnolia+cockpit/Backing+up+and+restoring/Creating+a+backup+manually)
@@ -59,7 +59,7 @@ To check that the environment is running on the correct release:
     release are present. You may want to check changed style (due to
     updated webresources) or create new content with new features.
 
-::: {.warning}
+:::warning
 Always avoid hotfixing problems in the Resources app because the changes
 are not propagated back to your GIT repository.
 :::
