@@ -44,6 +44,10 @@ git push
 (Click the 'x' in the upper right corner of the app.)
 *   Now, open the Tours app, and see that your label change has been applied!
 
+> Did the app not load or you don't see a change? You might have made a typo by accident. 
+* Open the `Definitions` app, then open the `Problems` tab. Do you see any 'Severe' problems, or anything related to 'Tours'?
+* Once you find the problem and fix your `contentTypes/tours.yaml` file, you will also need to make a small change to the `apps/tours.yaml` file, just add a space to the end of the file. Now push both of these files to git. 
+* Then logout of your Author instance (menu at the top right) and log back in. The problem will be fixed.
 
 :::tip Congratulations!
 Now you know how to deploy your changes to your hosted __magnolia-trials.com__ instance.
