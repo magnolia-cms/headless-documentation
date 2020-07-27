@@ -400,7 +400,6 @@ We need to open CORS on the server.
 - Now, click the `Move` action.
 - Select `uriSecurity` (a few items up.)
 - Click the `Move After` button.
-
 Now refresh your browser tab with your client app.
 The trips are rendered!
 (If not, check the browser developer tools again for hints, especially the `Network` tool.)
@@ -427,5 +426,11 @@ You've built a client for your Headless CMS!
 
 ## Next Steps / FAQ
 
-Next, read the __magnolia-trials.com__ [FAQ & Next Steps](/docs/getting-started/hosted-faq) to review, and to choose your learning path.
+Next, to learn more about building and deploying the SPA included in the preinstalled demo project follow this tutorial:
+
+ *[Build and Deploy the SPA](/docs/getting-started/hello-hosted-deploy-spa)*
+
+Or, jump straight to the magnolia-trials.com FAQ to review, and to choose your learning path.
+
+*[FAQ & Next Steps](/docs/getting-started/hosted-faq)*
 

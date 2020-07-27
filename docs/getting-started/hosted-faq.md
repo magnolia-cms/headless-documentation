@@ -7,9 +7,9 @@ After you have been through the two introductory tutorials, you are ready to exp
 
 This FAQ will give you the key principles you need to work effectively with your hosted magnolia-trials.com instance.
 
-## Multiple projects side-by-side.
+## Multiple projects side-by-side
 
-In the [second tutorial](/docs/getting-started/hello-hosted-headless) you learned how to create a new light module where you could package all configuration for a new project. 
+In the [hosted headless tutorial](/docs/getting-started/hello-hosted-headless) you learned how to create a new light module where you could package all configuration for a new project. 
 
 It is a good practice to put each project in its own module.
 However there are a few things to keep in mind when you take this approach.
@@ -84,7 +84,15 @@ While these tutorials are not tailored to the magnolia-trials.com service, you c
 These tutorials include installing Magnolia on your local computer. While this setup takes a little longer, you'll be rewarded with a great developer experience. Every change you make will be picked up instantly by your local computer.
 :::
 
+### Concepts
+
+Before proceeding with more tutorials, consider getting the big picture with 1 or more of the 6 concept pages.
+
+[_Concept Pages_](/docs/concepts/light-development)
+
+
 ### Next Tutorials
+
 
 #### Hello Magnolia SPA
 
@@ -92,11 +100,11 @@ It's headless, but with a *great authoring experience*. Enable authors to edit y
 
 This is the tutorial for a minimal SPA Editing project. Great starter project.
 
-[_Hello Magnolia SPA_](hello-spa.md)
+*[_Hello Magnolia SPA_](hello-spa)*
 
 #### Hello Magnolia
 
-Learn the basics of Magnolia templating
+Learn the fundamentals of Magnolia templating
 
-[_Hello Magnolia_](https://documentation.magnolia-cms.com/display/DOCS/Hello+Magnolia)
+*[_Hello Magnolia_](https://documentation.magnolia-cms.com/display/DOCS/Hello+Magnolia)*
 
