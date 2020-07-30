@@ -16,7 +16,7 @@ module.exports = {
         src: "img/magnolia-medium.png",
       },
 
-      links: [
+      items: [
         { to: "docs/introduction", label: "Docs", position: "left" },
         {
           href: "https://magnolia-cms.com",
@@ -43,7 +43,7 @@ module.exports = {
             },
             {
               label: "Feedback / Bugs",
-              href: "mailto: headless-docs@magnolia-cms.com",
+              href: "mailto:headless-docs@magnolia-cms.com",
             },
           ],
         },
@@ -117,7 +117,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "",
+          editUrl:
+            "https://github.com/magnolia-cms/headless-documentation/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

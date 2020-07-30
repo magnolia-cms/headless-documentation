@@ -88,7 +88,7 @@ If Node.js and/or npm is not installed you can follow [these](https://docs.npmjs
 
 
 ## Install Magnolia CLI
-The Magnolia Commandline Interface (CLI) helps you to download, install and start Magnolia. It also provides many handy tools for developing [Light Modules](../concepts/1-light-development#light-module)
+The Magnolia Commandline Interface (CLI) helps you to download, install and start Magnolia. It also provides many handy tools for developing [Light Modules](/docs/concepts/light-development#light-module)
 
 ```
 $ npm install @magnolia/cli -g

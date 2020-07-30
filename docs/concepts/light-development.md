@@ -60,4 +60,4 @@ We provide some fancy features to keep your YAML DRY.
 *   Includes
 *   Overrides
 
-Learn more in the dedicated [YAML Concept page](2-yaml-hyper-config.md).
+Learn more in the dedicated [YAML Concept page](yaml-hyper-config.md).
