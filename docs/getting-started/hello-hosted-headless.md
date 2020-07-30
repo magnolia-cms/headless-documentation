@@ -269,6 +269,8 @@ Once logged in, press the grid icon in the header. Your Trips app is in the app 
 
 Now, open your Trips app, and go ahead and create a few trips. (Have a dream vacation in mind? :)
 
+## Troubleshooting 
+
 > Don't see the Trips app? Double check that you have created the files as mentioned above. You should have a directory structure like this:
 - light-modules
   - basic-trips-lm
@@ -281,6 +283,11 @@ Now, open your Trips app, and go ahead and create a few trips. (Have a dream vac
         - trips.yaml
     - ...
 
+> Something still not right?
+A good troubleshooting tool is the `Definitions` app.
+* In the Magnolia UI, type `Definitions` in the Find Bar at the top, and open the app.
+* Switch to the `Problems` tab, and see if there are any problems from your module: `basic-trips-lm`.
+* The problem detail message will give you clues about what went wrong. It's usually just a typo. 
 
 ## Test REST 
 

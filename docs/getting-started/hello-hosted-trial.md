@@ -25,6 +25,8 @@ Clone your provisioned git repo:
 git clone [YOUR_CLONE_URL]
 ```
 
+> Note: If you already have a user on the Magnolia BitBucket git repository, then you may already have a different git username stored on your system. Please consult the git documentation on how to either temporarily change your stored username, or configure a local username just for this repository. If you have trouble, don't hesitate to reach out to us!
+
 Notice that your repository is pre-populated with a demonstration website project. You can remove it later if you want.
 
 This repository is how you make changes to your hosted Magnolia instance. 
