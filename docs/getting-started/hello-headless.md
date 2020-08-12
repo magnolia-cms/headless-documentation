@@ -169,63 +169,60 @@ datasource:
     autoCreate: true
 
 model:
-    properties:
-    - name: name
+  properties:
+    name:
       label: Name
       required: true
       i18n: true
 
-    - name: description
+    description:
       label: Description
       i18n: true
 
-    - name: isFeatured
+    isFeatured:
+      type: Boolean #Types 'Decimal', 'Long' and 'Double' are also available.
       label: Feature this item
-      type: Boolean  #Types 'Decimal', 'Long' and 'Double' are also available.
 
-    - name: image
-      label: Image
+    image:
       type: asset
+      label: Image
 
-    - name: tourTypes
+    tourTypes:
       label: Tour Types
-      type: reference:category
-      multiple: true
 
-    - name: location
+    location:
       label: Start City
       i18n: true
 
-    - name: date
+    date:
       label: Date
       type: Date
 
-    - name: duration
-      label: Tour Duration
+    duration:
       type: Long
+      label: Tour Duration
       options:
-        '2':
+        "2":
           value: 2
           label: 2 days
-        '7':
+        "7":
           value: 7
           label: 7 days
-        '14':
+        "14":
           value: 14
           label: 14 days
-        '21':
+        "21":
           value: 21
           label: 21 days
 
-    - name: tourOperator
+    tourOperator:
       label: Tour Operator
       i18n: true
 
-    - name: body
-      label: Body
+    body:
       type: richText
+      label: Body
       i18n: true
-
 ```
 ![Terminal Create Content Type](/assets/create-content-type.gif)
 
@@ -245,21 +242,28 @@ cd ../apps
 Create a file named `tours.yaml` with following content:
 
 ```yaml
-!content-type-m5:tours
+!content-type:tours
 name: tours
 label: Tours
 
 # Optionally override any of the app configuration supplied by the content type.
 subApps:
   detail:
-    editor:
-      form:
-        tabs:
-          default:
-
-            fields:
-              - name: isFeatured
-                buttonLabel: Featured
+    label: Detail Tour
+    form:
+      properties:
+        isFeatured:
+          buttonLabel: "Featured"
+        tourTypes:
+          $type: jcrMultiValueField
+          type: String
+          itemProvider:
+            $type: currentItemProvider
+          field:
+            $type: linkField
+            chooser:
+              workbenchChooser:
+                appName: categories
 ```
 
 To see your new Tours app, log out and log back in, and press the grid icon.

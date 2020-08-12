@@ -1445,39 +1445,37 @@ datasource:
 
 model:
   properties:
-    - name: name
+    name:
       label: Name
       required: true
       i18n: true
 
-    - name: description
+    description:
       label: Description
       i18n: true
 
-    - name: isFeatured
-      label: Feature this item
+    isFeatured:
       type: Boolean #Types 'Decimal', 'Long' and 'Double' are also available.
+      label: Feature this item
 
-    - name: image
-      label: Image
+    image:
       type: asset
+      label: Image
 
-    - name: tourTypes
+    tourTypes:
       label: Tour Types
-      type: reference:category
-      multiple: true
 
-    - name: location
+    location:
       label: Start City
       i18n: true
 
-    - name: date
+    date:
       label: Date
       type: Date
 
-    - name: duration
-      label: Tour Duration
+    duration:
       type: Long
+      label: Tour Duration
       options:
         "2":
           value: 2
@@ -1492,13 +1490,13 @@ model:
           value: 21
           label: 21 days
 
-    - name: tourOperator
+    tourOperator:
       label: Tour Operator
       i18n: true
 
-    - name: body
-      label: Body
+    body:
       type: richText
+      label: Body
       i18n: true
 ```
 ### Create a Magnolia App
@@ -1512,21 +1510,28 @@ cd ../apps
 Create a file named `tours.yaml` with following content:
 
 ```yaml
-!content-type-m5:tours
+!content-type:tours
 name: tours
 label: Tours
 
 # Optionally override any of the app configuration supplied by the content type.
 subApps:
   detail:
-    editor:
-      form:
-        tabs:
-          default:
-
-            fields:
-              - name: isFeatured
-                buttonLabel: Featured
+    label: Detail Tour
+    form:
+      properties:
+        isFeatured:
+          buttonLabel: "Featured"
+        tourTypes:
+          $type: jcrMultiValueField
+          type: String
+          itemProvider:
+            $type: currentItemProvider
+          field:
+            $type: linkField
+            chooser:
+              workbenchChooser:
+                appName: categories
 ```
 
 To see your new Tours app, log out and log back in, and press the grid icon.
