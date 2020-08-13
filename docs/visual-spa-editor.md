@@ -124,11 +124,10 @@ Start by browsing the [Minimal Headless Spa Demos](https://git.magnolia-cms.com/
 ## FAQ
 
 #### Is Magnolia personalization feature supported?
-No, not yet 100%. Planned for Q3/2020.
-However you can still achieve some personalization scenarios.
+No, not yet 100%. However you can still achieve some personalization scenarios. A full-fledged feature is on roadmap.
 
 #### Can the Page Editor load an app hosted on another server, like 'Next'?
-No, not yet due to CSP issues. Planned for Q3/2020.
+No, not yet due to CSP issues. Supporting this set-up is on our roadmap.
 
 #### How to provide good SEO for my SPA?
 Because your public SPA is running completely outside of Magnolia, you should use whatever frontend delivery system makes the most sense for your team and project. We recommend some kind of SSR system such as 'Next', 'Nuxt', 'Render', 'Gatsby' or your own. This is the best practice to have a SPA with good SEO crawlabilty.
