@@ -4,7 +4,7 @@ title: "Hello Magnolia - SPA"
 
 ## Overview
 
-In this Tutorial we will learn how to use the Visual Single Page Application (SPA) Editor to build stunning websites with ReactJS and Angular.
+In this Tutorial we will learn how to use the [Visual Single Page Application (SPA) Editor](https://www.magnolia-cms.com/product/single-page-apps-editing.html) to build stunning websites with ReactJS and Angular.
 
 Basic Form-based headless CMS systems are good for constrained and predefined content types.
 But to give marketers the ability to create articles, page structure or create their own custom landing pages or micro-sites, the Magnolia SPA Editor will accelerate your Marketer and free up your development capacity.

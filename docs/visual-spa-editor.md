@@ -6,7 +6,7 @@ title: "Visual SPA Editor"
 
 ## What it does
 
-The Visual SPA Editor connects the modern _component-architecture_ of SPA, with the _component_ concept of CMS page editors. You can build a SPA, and give it placeholder "areas", that can be managed from a CMS.
+The [Visual SPA Editor](https://www.magnolia-cms.com/product/single-page-apps-editing.html) connects the modern _component-architecture_ of SPA, with the _component_ concept of CMS page editors. You can build a SPA, and give it placeholder "areas", that can be managed from a CMS.
 
 *   Frontend Developer: Builds SPA. Adapts SPA to make it content manageable.
 *   Frontend or Magnolia Developer: Creates Magnolia bindings and dialogs. (Putting _handles and knobs_ on the components for authors.)
