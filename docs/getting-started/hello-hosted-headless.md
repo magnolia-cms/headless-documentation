@@ -85,6 +85,10 @@ mgnl create-light-module basic-trips-lm
 
 Have a look at the contents of the directory it created.
 
+> **More to read:** > [Light Modules](/docs/concepts/light-development#light-module)
+
+
+
 ## Create a Content Type
 
 > After talking to the design and marketing team we know that our Travel Packages can have the following information:
@@ -250,6 +254,9 @@ references:
         - 960x720
         - 480x360
 ```
+
+> **More to read:** > [REST Endpoint Configuration](https://documentation.magnolia-cms.com/display/DOCS62/Delivery+endpoint+API+v2#DeliveryendpointAPIv2-Configuration)
+
 
 #### What did we just do?
 

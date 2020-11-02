@@ -93,7 +93,16 @@ You're off to a great start with Magnolia.
 
 You have reached the end of the tailored learning path for the magnolia-trials.com service. You are ready to explore the further available resources.
 
-While these tutorials are not tailored to the magnolia-trials.com service, you can still deploy them to your hosted server if you would like, using the above information from this FAQ.
+### Magnolia Academy & Training
+
+Magnolia Academy is our online learning solution for Magnolia users. It comprises a collection of video-based online courses and is packed with exercises and knowledge checkpoints. Solution codes are shared through Git. 
+
+[_Magnolia Academy_](https://www.magnolia-cms.com/training/academy.html)
+
+Check out our instructor-led trainings too.
+
+[_Magnolia Training_](https://www.magnolia-cms.com/training)
+
 
 ### Install locally for best devX
 
@@ -110,6 +119,7 @@ Before proceeding with more tutorials, consider getting the big picture with 1 o
 
 ### Next Tutorials
 
+While these tutorials are not tailored to the magnolia-trials.com service, you can still deploy them to your hosted server if you would like, using the above information from this FAQ.
 
 #### Hello Magnolia SPA
 
