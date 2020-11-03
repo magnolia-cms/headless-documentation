@@ -6,8 +6,6 @@ hide_table_of_contents: true
 
 import { RedocStandalone } from 'redoc';
 
-# Delivery API
-
 Magnolia's modern delivery system is highly customizable. Instead of just the one delivery API, like most Headless CMS, you configure whichever delivery API's you need. You control what content types are returned, what relationships are resolved, the depth of child nodes to return - all with simple YAML configuration files.
 
 Magnolia's content lives in *trees* as well as *lists*, and the delivery API fully takes advantage of this. There are two key ways to access configured endpoints: 

@@ -3,9 +3,6 @@ title: "Management API"
 
 ---
 
-
-# Management API
-
 Magnolia's management APIs are very flexible. 
 
 
