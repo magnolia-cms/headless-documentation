@@ -18,8 +18,16 @@ Given the path to a node, this interface returns that node and all its children 
 
 When 1 or more query parameters are included in the request, then all matching results are returned, following any requested ordering parameters.
 
+### Reference Resolving
+
+Content items often reference other content items. For example multiple `book` items could reference an `author` item.  The delivery endpoints can be configured to also return this referenced content all in one request!
+
+To avoid returning too much content, you need to configure each property which should "resolve" (or "get") its referenced content.
+
 ### Resources
 * See [Full Docs: Delivery API](https://documentation.magnolia-cms.com/display/DOCS/Delivery+endpoint+API+v2)
+
+* See [Full Docs: Reference Resolving](https://documentation.magnolia-cms.com/display/DOCS/Resolving+references+with+the+delivery+endpoint)
 
 
 <!-- TODO  
