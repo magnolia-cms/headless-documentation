@@ -70,7 +70,7 @@ Type ```java -version``` to verify your installation.
 
 
 ### Setup Node.js and npm
-Type ```node --v``` and ```npm --v``` in a terminal or command prompt. If the system reports a version number, Node.js and npm are installed on your computer.
+Type ```node -v``` and ```npm -v``` in a terminal or command prompt. If the system reports a version number, Node.js and npm are installed on your computer.
 
 ```
 $ node -v
