@@ -189,6 +189,7 @@ model:
 
     tourTypes:
       label: Tour Types
+      multiple: true
 
     location:
       label: Start City
@@ -257,8 +258,6 @@ subApps:
         tourTypes:
           $type: jcrMultiValueField
           type: String
-          itemProvider:
-            $type: currentItemProvider
           field:
             $type: linkField
             chooser:
