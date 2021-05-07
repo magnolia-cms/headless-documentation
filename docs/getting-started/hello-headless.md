@@ -278,7 +278,7 @@ We have prepared Demo Content to start with. To install the Demo Content follow 
 ![Terminal Create Content Type](/assets/import-tours-content.gif)
 
 ### Browsing our content  
-These steps were already enough to browser the content and to use the Form Editor.
+These steps were already enough to browse the content and to use the Form Editor.
 
 ![Browsing Content](/assets//02-01-browse.gif)
 
@@ -419,7 +419,7 @@ What? No images displaying? We need to allow anonymous access to the image urls 
 Now refresh your client, et voila - images!
 
 :::tip Congratulations!
-In the meantime we have the design. Our marketers want to enhance the travel portfolio page. They want to be able to add promotional teaser on top of the page and a custom sidebar too. They want to be able to define freely what to add there and add new article pages. They wnat to have full control of the navigation.
+In the meantime we have the design. Our marketers want to enhance the travel portfolio page. They want to be able to add promotional teaser on top of the page and a custom sidebar too. They want to be able to define freely what to add there and add new article pages. They want to have full control of the navigation.
 
 Lets have a look at the Magnolia headless SPA editor... 
 :::
