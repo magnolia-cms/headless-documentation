@@ -107,7 +107,7 @@ $ sudo npm install @magnolia/cli -g
 Test that it is installed correctly:
 ```
 $ mgnl -v
-Magnolia CLI: 3.1.0 (node.js: v12.15.0)
+Magnolia CLI: 4.0.0 (node.js: v12.15.0)
 ```
 
 You can find more information in the [Magnolia CLI](https://documentation.magnolia-cms.com/display/DOCS/Magnolia+CLI) Documentation.

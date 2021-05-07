@@ -114,14 +114,6 @@ Are you having any trouble with starting Magnolia?
 [Just send us an email, and we'll get you setup!](mailto:headless-docs@magnolia-cms.com)
 :::
 
-### Configure CORS
-
-* Open the [Configuration app](http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:configuration:browser;/server/filters:treeview:)
-* Find `/server/filters` and scroll to the end.
-* Move `addCORSHeaders` directly after `uriSecurity` (a few items up.)
-
-![Frontend](/assets/configure-cors.gif)
-
 ## What are we going to build?
 
 We are going to build a Travel Website SPA promoting travel packages.
@@ -322,8 +314,7 @@ references:
 
 
 ### Accessing our content 
-- Open your browser
-- Go to url: http://localhost:8080/magnoliaAuthor/.rest/delivery/tours/?limit=100&orderBy=mgnl:lastModified%20desc
+- Access: [http://localhost:8080/magnoliaAuthor/.rest/delivery/tours/?limit=100&orderBy=mgnl:lastModified%20desc](http://localhost:8080/magnoliaAuthor/.rest/delivery/tours/?limit=100&orderBy=mgnl:lastModified%20desc)
 - You can see the JSON
 - (Note the `limit` parameter. Endpoints limit to 10 results by default.)
 - (Note the `orderBy` parameter. You can order on any property.)
@@ -331,7 +322,7 @@ references:
 ![Browsing JSON](/assets//02-01-browse-json.gif)
 
 ## Extra: Updating and adding new Tours
- - Open the Tours app again http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:tours
+ - Open the Tours app again [http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:tours](http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:tours)
  - Add your own tour
  - Check the endpoint URL again and look for the tour you added.
 
