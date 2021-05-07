@@ -128,6 +128,11 @@ mgnl start
 
 ![welcome screen](/assets/01-installation-01-welcome.gif)
 
+:::tip Help is here
+Are you having any trouble with starting Magnolia?
+[Just send us an email, and we'll get you setup!](mailto:headless-docs@magnolia-cms.com)
+:::
+
 ### Configure CORS
 
 Magnolia is an enterprise-level CMS system, therefore security is taken very serously. To be able to access website content from our headless application we will need to enable CORS in the system.

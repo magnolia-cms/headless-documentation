@@ -23,7 +23,13 @@ java version "1.8.0_231"
 Java(TM) SE Runtime Environment (build 1.8.0_231-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.231-b11, mixed mode)
 ```
-If you don't have Java, install it on your system.
+
+:::tip Important
+Be sure to use a compatible version of Java from the [Magnolia Certified Stack](https://docs.magnolia-cms.com/product-docs/Administration/Certified-stack.html)
+(At the time of writing: Java 8,11,14)
+:::
+
+If you don't have Java, or it is not a compatible version, install it on your system.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -56,7 +62,7 @@ Alternatively you can [Download](https://www.java.com/en/download/) the latest J
 </TabItem>
 <TabItem value="win">
 
-Follow the instructions on the [Magnolia Documentation](https://documentation.magnolia-cms.com/display/DOCS61/Installing+Magnolia) to install Java on Windows. 
+Follow the instructions on the [Magnolia Documentation](https://documentation.magnolia-cms.com/display/DOCS/Installing+Magnolia) to install Java on Windows. 
 
 </TabItem>
 

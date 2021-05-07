@@ -109,6 +109,11 @@ mgnl start
 
 ![welcome screen](/assets/01-installation-01-welcome.gif)
 
+:::tip Help is here
+Are you having any trouble with starting Magnolia?
+[Just send us an email, and we'll get you setup!](mailto:headless-docs@magnolia-cms.com)
+:::
+
 ### Configure CORS
 
 * Open the [Configuration app](http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:configuration:browser;/server/filters:treeview:)

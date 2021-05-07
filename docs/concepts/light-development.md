@@ -26,7 +26,7 @@ Magnolia watches a specific directory, typically named 'light-modules', and trea
 
 A light module can contain an entire customer project, or it can contain a reusable feature - such as a templating component to display a map on a website.
 
-[More on light modules](https://documentation.magnolia-cms.com/display/DOCS61/Light+modules)
+[More on light modules](https://documentation.magnolia-cms.com/display/DOCS/Light+modules)
 
 ### Definitions
 
