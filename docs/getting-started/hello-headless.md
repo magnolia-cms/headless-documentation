@@ -26,7 +26,7 @@ cd hello-magnolia-headless
 Clone the git repository:  
 (Note that we are cloning a special branch for this tutorial __'hello-magnolia-headless'__)
 ```
-git clone -b hello-magnolia-headless https://git.magnolia-cms.com/scm/~czimmermann/basic-headless-demos.git
+git clone -b hello-magnolia-headless https://git.magnolia-cms.com/scm/demos/basic-headless-demos.git
 ```
 
 
@@ -189,6 +189,7 @@ model:
 
     tourTypes:
       label: Tour Types
+      type: reference:category
       multiple: true
 
     location:
@@ -250,19 +251,11 @@ label: Tours
 # Optionally override any of the app configuration supplied by the content type.
 subApps:
   detail:
-    label: Detail Tour
+    label: Tour Detail
     form:
       properties:
         isFeatured:
-          buttonLabel: "Featured"
-        tourTypes:
-          $type: jcrMultiValueField
-          type: String
-          field:
-            $type: linkField
-            chooser:
-              workbenchChooser:
-                appName: categories
+          buttonLabel: Featured
 ```
 
 To see your new Tours app, log out and log back in, and press the grid icon.
