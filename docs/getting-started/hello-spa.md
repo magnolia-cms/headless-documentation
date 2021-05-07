@@ -92,7 +92,7 @@ defaultValue="mac"
 groupId="operating-systems"
 values={[
 { label: 'Mac or Linux', value: 'mac', },
- { label: 'Windows', value: 'win' },
+ { label: 'Windows', value: 'windows' },
 ]  
 }>
 <TabItem value="mac">
