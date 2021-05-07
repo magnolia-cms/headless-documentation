@@ -133,21 +133,11 @@ Are you having any trouble with starting Magnolia?
 [Just send us an email, and we'll get you setup!](mailto:headless-docs@magnolia-cms.com)
 :::
 
-### Configure CORS
-
-Magnolia is an enterprise-level CMS system, therefore security is taken very serously. To be able to access website content from our headless application we will need to enable CORS in the system.
-
-- Open the [Configuration app](http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:configuration:browser;/server/filters:treeview:)
-- Find `/server/filters` and scroll to the end.
-- Move `addCORSHeaders` directly after `uriSecurity` (a few items up.)
-
-![Frontend](/assets/configure-cors.gif)
-
 ### Install the SPA
 
-We include both a React and an Angular example, just choose which one you want to use.
+We include a React, Angular & Vue example, just choose which one you want to use.
 
-In your terminal, go to the actual frontend app directory (for React or Angular). Install the dependencies either with npm or yarn, and do your first build.
+In your terminal, go to the actual frontend app directory (for React, Angular or Vue). Install the dependencies either with npm or yarn, and do your first build.
 <Tabs
 defaultValue="react"
 groupId="js-framework"
