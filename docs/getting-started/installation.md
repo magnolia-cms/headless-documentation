@@ -110,7 +110,7 @@ $ mgnl -v
 Magnolia CLI: 4.0.0 (node.js: v12.15.0)
 ```
 
-You can find more information in the [Magnolia CLI](https://documentation.magnolia-cms.com/display/DOCS/Magnolia+CLI) Documentation.
+You can find more information in the [Magnolia CLI](https://docs.magnolia-cms.com/magnolia-cli/4.x/index.html) Documentation.
 
 :::tip Your system is ready to go
 Let's build a headless app, shall we?
