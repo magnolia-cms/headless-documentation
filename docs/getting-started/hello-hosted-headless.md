@@ -26,7 +26,7 @@ A Headless CMS separates your content from the systems that render the content. 
 
 #### Setup Node.js and npm
 
-Type `node --v` and `npm --v` in a terminal or command prompt. If the system reports a version number, Node.js and npm are installed on your computer.
+Type `node -v` and `npm -v` in a terminal or command prompt. If the system reports a version number, Node.js and npm are installed on your computer.
 
 ```
 $ node -v
@@ -219,8 +219,6 @@ subApps:
         tourTypes:
           $type: jcrMultiValueField
           type: String
-          itemProvider:
-            $type: currentItemProvider
           field:
             $type: linkField
             chooser:

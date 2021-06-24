@@ -1520,8 +1520,6 @@ subApps:
         tourTypes:
           $type: jcrMultiValueField
           type: String
-          itemProvider:
-            $type: currentItemProvider
           field:
             $type: linkField
             chooser:
