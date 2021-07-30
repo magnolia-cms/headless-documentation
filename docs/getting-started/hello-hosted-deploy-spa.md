@@ -3,6 +3,10 @@ title: "Hosted Trial - Build and Deploy the demo SPA"
 
 ---
 
+import ChangeHeaderForHostedFreeTrials from '../../src/ChangeHeader';
+
+<ChangeHeaderForHostedFreeTrials/>
+
 The provisioned demo project, 'spa-website-demo', demonstrates an advanced headless approach. It shows how you can have an independent frontend getting content from Magnolia over REST API's, and yet still give content authors a WYSIWYG visual page editor.  
 We call it the [Visual SPA Editor](/docs/visual-spa-editor).
 

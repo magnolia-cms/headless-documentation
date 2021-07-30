@@ -5,6 +5,10 @@ title: "Hello Magnolia - Hosted Headless"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import ChangeHeaderForHostedFreeTrials from '../../src/ChangeHeader';
+
+<ChangeHeaderForHostedFreeTrials/>
+
 ## Overview
 
 - What is a Headless CMS?

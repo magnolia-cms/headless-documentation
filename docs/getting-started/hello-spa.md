@@ -2,6 +2,10 @@
 title: "Hello Magnolia - SPA"
 ---
 
+import ChangeHeaderForHostedFreeTrials from '../../src/ChangeHeader';
+
+<ChangeHeaderForHostedFreeTrials/>
+
 ## Overview
 
 In this Tutorial we will learn how to use the [Visual Single Page Application (SPA) Editor](https://www.magnolia-cms.com/product/single-page-apps-editing.html) to build stunning websites with ReactJS and Angular.

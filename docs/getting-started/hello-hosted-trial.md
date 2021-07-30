@@ -5,6 +5,10 @@ title: "Hello Magnolia - Hosted Trial"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import ChangeHeaderForHostedFreeTrials from '../../src/ChangeHeader';
+
+<ChangeHeaderForHostedFreeTrials/>
+
 ## Get Started with the Hosted Trial
 
 Let's take Magnolia for a spin. We'll cover how to work with your new server via the provisioned git repository.
