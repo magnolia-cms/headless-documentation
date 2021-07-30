@@ -42,8 +42,7 @@ npm run start
 
 > The app is running locally, with content from your hosted Magnolia!
 
-(If not, check the browser developer tools for hints, especially the `Console` and `Network` tool.  
-If it's CORS or permissions issues - [see the previous tutorial for how to fix these](/docs/getting-started/hello-hosted-headless#cors))
+(If not, check the browser developer tools for hints, especially the `Console` and `Network` tool.)
 
 
 
@@ -56,7 +55,7 @@ So far you have have been working with content on the `Author` instance. The app
 
 But you'll want your production frontend to display the published content being served from the `Public` instance. To view the published content on your local dev server:
 
-Again, edit `/spa/react-website/.env`, and change 'author' to 'public'.)  
+Again, edit `/spa/react-website/.env`, and change 'author' urls to 'public' urls.)  
 ```
 REACT_APP_MGNL_DEV_DEFAULT_BASE_URL= [YOUR_PUBLIC_URL]
 REACT_APP_MGNL_DEV_DAM_BASE_URL= [YOUR_PUBLIC_URL]
@@ -68,16 +67,14 @@ Start it again with
 npm run start
 ```
 
-> The app is running locally, but ... with no content. :( Thanks CORS!
+> The app is running locally!
 
 Log into the Magnolia UI running on your `Public` instance. The URL is:
 `[YOUR_PUBLIC_URL]/.magnolia/admincentral`
 
-Perform the same install of the CORS headers as [in the previous tutorial](/docs/getting-started/hello-hosted-headless#cors))
-
 Refresh your browser, the content loads now!
 
-(If it is still not working, check the browser developer tools for hints, especially the `Console` and `Network` tool.)
+(If it is not working, check the browser developer tools for hints, especially the `Console` and `Network` tool.)
 
 
 ## Local SPA Development

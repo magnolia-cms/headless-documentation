@@ -438,27 +438,6 @@ Just open the `index.html` file in a web browser, for example by double-clicking
 
 (You could also place the file on any web server.)
 
-### CORS
-
-Don't see any trips? Don't worry, you were doomed to fail. :)
-Use your browser's developer tools and check out the console. CORS, right?
-
-We need to enable CORS on the server.
-
-1.  In Magnolia, type `filters` into the Find Bar at the top.
-2.  Click on the first result. (It should include '/server/filters/')
-    - The `Configuration` app opens, and `/server/filters` is selected.
-3.  Click the `Import` Action, you might have to scroll down in the Action Bar.
-4.  Click `Upload` and select the `_dev/config.server.filters.addCORSHeaders.xml` file from your repository.
-5.  Click `Import File`.
-    - The `addCorsHeaders` item is displayed and selected.
-6.  Now, click the `Move` action.
-7.  Select `uriSecurity` (a few items up.)
-8.  Click the `Move After` button.
-9.  Now refresh your browser tab with your client app.
-    - The trips are rendered!
-    - (If not, check the browser developer tools again for hints, especially the `Network` tool.)
-
 ### Permissions for Images
 
 What? No images displaying? We need to allow anonymous access to the image urls since we are running on the Author instance.
