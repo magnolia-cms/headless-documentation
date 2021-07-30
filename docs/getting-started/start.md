@@ -28,5 +28,4 @@ The *Hello Magnolia SPA* section will cover the use-cases of a visual SPA editor
 - Magnolia's [Full Documentation](https://documentation.magnolia-cms.com/display/DOCS) has detailed explanation of all Magnolia technical concepts.
 - Ask on our [User Group List](https://groups.google.com/a/magnolia-cms.com/forum/#!forum/user-list)
 - Ask the Stack [Stack Overflow](https://stackoverflow.com/questions/tagged/magnolia) (Use tag `magnolia`)
-- Really stuck? Go on and send us an email, headless-docs@magnolia-cms.com 
 

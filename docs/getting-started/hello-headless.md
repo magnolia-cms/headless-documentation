@@ -111,7 +111,7 @@ mgnl start
 
 :::tip Help is here
 Are you having any trouble with starting Magnolia?
-[Just send us an email, and we'll get you setup!](mailto:headless-docs@magnolia-cms.com)
+[Ask for help on our google group, and we'll get you setup!](https://groups.google.com/a/magnolia-cms.com/g/user-list)
 :::
 
 ## What are we going to build?
