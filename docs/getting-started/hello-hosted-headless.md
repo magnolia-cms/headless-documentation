@@ -434,9 +434,16 @@ In the page, replace the [YOUR_AUTHOR_URL] placeholders with your actual Author 
 
 ### Run the frontend
 
-Just open the `index.html` file in a web browser, for example by double-clicking on it.
+The frontend needs to be run on a web server. In your terminal go to the directory containing `index.html` and start a web server, then access your page in the browser.
 
-(You could also place the file on any web server.)
+For example, use the http-server npm package:
+
+```
+npm install http-server -g
+http-server
+```
+
+(Just opening the `index.html` file in a web browser, for example by double-clicking on it, will result in CORS errors.)
 
 ### Permissions for Images
 

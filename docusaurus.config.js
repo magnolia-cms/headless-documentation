@@ -42,6 +42,10 @@ module.exports = {
               to: "docs/getting-started/start",
             },
             {
+              label: "Help!",
+              href: "https://groups.google.com/a/magnolia-cms.com/forum/#!forum/user-list",
+            },
+            {
               label: "Feedback / Bugs",
               href: "mailto:headless-docs@magnolia-cms.com",
             },
