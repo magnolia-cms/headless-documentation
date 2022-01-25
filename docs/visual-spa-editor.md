@@ -109,8 +109,8 @@ Start by browsing the [Minimal Headless Spa Demos](https://git.magnolia-cms.com/
     *   Load the template information from the templateDefinition endpoint, based on the templateID of the route page. ([Example](https://git.magnolia-cms.com/projects/DEMOS/repos/minimal-headless-spa-demos/browse/spa/react-minimal/src/helpers/PageLoader.js))
     *   Create a component mapping configuration. ([Example](https://git.magnolia-cms.com/projects/DEMOS/repos/minimal-headless-spa-demos/browse/spa/react-minimal/src/magnolia.config.js))
     *   Use the 'Page' component from the Magnolia JS library to instantiate a frontend component.  based on the templateId of the magnolia page, and the mapping. ([Example](https://git.magnolia-cms.com/projects/DEMOS/repos/minimal-headless-spa-demos/browse/spa/react-minimal/src/helpers/PageLoader.js))
-    *   Deploy your SPA to your Magnolia module. (This version of SPA is only used by authors in the Pages app.) (to: /magnolia/light-modules/react-minimal-lm/webresources)
-    *   Create a Page Template definition and point it to the SPA index.html. Add a dialog with a 'title' property. ([Example](https://git.magnolia-cms.com/projects/DEMOS/repos/minimal-headless-spa-demos/browse/magnolia/light-modules/react-minimal-lm/templates/pages/basic.yaml))
+    *   Deploy your SPA. Typically on its own server. (But you could optionally host your SPA in a Magnolia light module.. `/magnolia/light-modules/react-minimal-lm/webresources/build`)
+    *   Create a Page Template definition and point it to the SPA URL. Add a dialog with a 'title' property. ([Example](https://git.magnolia-cms.com/projects/DEMOS/repos/minimal-headless-spa-demos/browse/magnolia/light-modules/react-minimal-lm/templates/pages/basic.yaml))
     *   Run the page app. Edit the title.
 *   Area
     *   Add areas to page template definition to enable author managed components
@@ -124,14 +124,17 @@ Start by browsing the [Minimal Headless Spa Demos](https://git.magnolia-cms.com/
 ## FAQ
 
 #### Is Magnolia personalization feature supported?
-No, not yet 100%. However you can still achieve some personalization scenarios. A full-fledged feature is on roadmap.
+Yes, this feature is available since October 2021.
+
+[Headless Personalization Documentation](https://docs.magnolia-cms.com/product-docs/6.2/Developing/SPA-development-and-Magnolia/Personalization-of-headless-SPA-projects.html)
 
 #### Can the Page Editor load an app hosted on another server, like 'Next'?
-No, not yet due to CSP issues. Supporting this set-up is on our roadmap.
+Yes, this feature is available since December 2021
+
+[SPA Hosting Documentation](https://docs.magnolia-cms.com/product-docs/6.2/Developing/SPA-development-and-Magnolia/SPA-hosting.html)
 
 #### How to provide good SEO for my SPA?
 Because your public SPA is running completely outside of Magnolia, you should use whatever frontend delivery system makes the most sense for your team and project. We recommend some kind of SSR system such as 'Next', 'Nuxt', 'Render', 'Gatsby' or your own. This is the best practice to have a SPA with good SEO crawlabilty.
-(Typically, only the SPA used in the Pages App by authors is hosted in Magnolia, and you don't want SEO in your Pages App.)
 
 #### Is this a 'RAD' App Builder?
 It can be used to allow non-developers to assemble web apps & mobile apps in an intuitive way. 
@@ -143,8 +146,6 @@ However, it does not provide anything special to manage app state and events, th
 
 * [SPA Feature page on the Full Docs](https://documentation.magnolia-cms.com/display/DOCS62/Single-page+applications)
 
-* [JS Library APIs on the Full Docs](https://documentation.magnolia-cms.com/display/DOCS62/SPA+development+and+Magnolia)
+* [SPA Development on the Full Docs](https://documentation.magnolia-cms.com/display/DOCS62/SPA+development+and+Magnolia)
 
-* [React-Editor README](https://git.magnolia-cms.com/projects/MODULES/repos/frontend-helpers/browse/packages/react-editor)
-
-* [Angular-Editor README](https://git.magnolia-cms.com/projects/MODULES/repos/frontend-helpers/browse/packages/angular-editor/projects/angular-editor/README.md)
+* [react-editor, vue-editor, angular-editor DOCS](https://docs.magnolia-cms.com/product-docs/6.2/Developing/SPA-development-and-Magnolia/Magnolia-front-end-helpers-for-SPA.html)

@@ -162,7 +162,7 @@ npm install
 ```
 
 ```
-npm run deploy:mgnl
+npm run start
 ```
 
 </TabItem>
@@ -177,7 +177,7 @@ npm install
 ```
 
 ```
-ng build --prod
+ng serve
 ```
 
 </TabItem>
@@ -192,7 +192,7 @@ npm install
 ```
 
 ```
-npm run deploy:mgnl
+npm run start
 ```
 
 </TabItem>
@@ -200,11 +200,11 @@ npm run deploy:mgnl
 
 ## See It In Action
 
-Let's have a look at the running demo containing the starter content before we are going to inspect the Starter Code. We have started Magnolia and built and deployed the project in the chapter before.
+Let's have a look at the running demo containing the starter content before we inspect the Starter Code. In the previous chapter, we have started Magnolia and built and started our SPA project.
 
 #### Install demo content
 
-We have prepared Demo Content to start with. To install the Demo Content follow these steps:
+To install the Demo Content follow these steps:
 
 - Open the [Pages App](http://localhost:8080/magnoliaAuthor/.magnolia/admincentral#app:pages-app) in your browser.
 - Click `Import` action (You might need to scroll down in the action bar.)
@@ -911,17 +911,13 @@ The full file will look like this:
 
 ```yaml
 title: "React: Basic"
-templateScript: /react-minimal-lm/webresources/build/index.html
+baseUrl: http://localhost:3000
+routeTemplate: '/{language}{{@path}}'
+# templateScript: /react-minimal-lm/webresources/build/index.html
 dialog: spa-lm:pages/basic
 
 renderType: spa
 class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
-
-# jsPaths:
-#   - http://localhost:3000/static/js/bundle.js
-#   - http://localhost:3000/static/js/0.chunk.js
-#   - http://localhost:3000/static/js/1.chunk.js
-#   - http://localhost:3000/static/js/main.chunk.js
 
 areas:
   main:
@@ -969,21 +965,13 @@ The full file will look like this:
 
 ```yaml
 title: "Angular: Basic"
-templateScript: /angular-minimal-lm/webresources/build/index.html
+baseUrl: http://localhost:4200
+routeTemplate: '/{language}{{@path}}'
+# templateScript: /angular-minimal-lm/webresources/build/index.html
 dialog: spa-lm:pages/basic
 
 renderType: spa
 class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
-
-# jsPaths:
-#   - /angular-minimal-lm/webresources/build/main.js
-#   - /angular-minimal-lm/webresources/build/runtime.js
-#   - /angular-minimal-lm/webresources/build/polyfills-es5.js
-#   - /angular-minimal-lm/webresources/build/polyfills.js
-#   - /angular-minimal-lm/webresources/build/vendor.js
-#   - /angular-minimal-lm/webresources/build/styles.js
-# cssPaths:
-#   - /angular-minimal-lm/webresources/build/styles.css
 
 areas:
   main:
@@ -1031,7 +1019,9 @@ The full file will look like this:
 
 ```yaml
 title: 'Vue: Basic'
-templateScript: /vue-minimal-lm/webresources/dist/index.html
+baseUrl: http://localhost:3000
+routeTemplate: '/{language}{{@path}}'
+# templateScript: /vue-minimal-lm/webresources/dist/index.html
 dialog: spa-lm:pages/basic
 
 renderType: spa
@@ -1175,10 +1165,11 @@ const config = {
 export default config;
 ```
 
-Build the SPA (in the `/spa/react-minimal` directory.)
+Ensure that your SPA development server is running. 
+If not, in the `/spa/react-minimal` directory run:
 
 ```
-npm run deploy:mgnl
+npm run start
 ```
 
 </TabItem>
@@ -1297,10 +1288,11 @@ src/app/components/tour-list/tour-list.component.html
 </div>
 ```
 
-Build the component (From the `/spa/angular-minimal` directory.)
+Ensure that your SPA development server is running. 
+If not, in the `/spa/angular-minimal` directory run:
 
 ```
-ng build --prod
+ng serve
 ```
 
 </TabItem>
@@ -1396,10 +1388,11 @@ const config = {
 export default config;
 ```
 
-Build the SPA (in the `/spa/vue-minimal` directory.)
+Ensure that your SPA development server is running. 
+If not, in the `/spa/vue-minimal` directory run:
 
 ```
-npm run deploy:mgnl
+npm run start
 ```
 
 </TabItem>
@@ -1409,7 +1402,7 @@ npm run deploy:mgnl
 
 ### Try your Component
 
-Now that you implemented your component and re-built (and deployed) your SPA, open up the Page Editor again and view your page.
+Now that you implemented your component, open up the Page Editor again and view your page.
 
 Your component is displayed.
 
@@ -1703,11 +1696,6 @@ export default ({ headline }) => {
 };
 ```
 
-Build the SPA (in the `/spa/react-minimal` directory.)
-
-```
-npm run deploy:mgnl
-```
 
 </TabItem>
 
@@ -1834,12 +1822,6 @@ Edit TourList component template ```tour-list.component.html```and replace it wi
 ```  
 
 
-Build the component (From the `/spa/angular-minimal` directory.)
-
-```
-ng build --prod
-```
-
 </TabItem>
 
 <TabItem value="vue">
@@ -1957,16 +1939,10 @@ And extend the template to display the tours by replacing `template` with follow
 </template>
 ```
 
-Build the SPA (in the `/spa/vue-minimal` directory.)
-
-```
-npm run deploy:mgnl
-```
-
 </TabItem>
 </Tabs>
 
-You have upgraded your component and re-built (and deployed) your SPA. Now open up the Page Editor again and view your page.
+You have upgraded your SPA component. Now open up the Page Editor again and view your page.
 
 You will see the new tour list.
 

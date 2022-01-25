@@ -51,6 +51,11 @@ module.exports = {
         },
         {
           type: 'link',
+          label:'Vue-Editor Library',
+          href: 'https://git.magnolia-cms.com/projects/MODULES/repos/frontend-helpers/browse/packages/vue-editor'
+        },
+        {
+          type: 'link',
           label:'Angular-Editor Library',
           href: 'https://git.magnolia-cms.com/projects/MODULES/repos/frontend-helpers/browse/packages/angular-editor/projects/angular-editor'
         }
