@@ -24,6 +24,11 @@ module.exports = {
           position: "right",
         },
         {
+          href: "https://ha.magnolia-cms.com",
+          label: "Headless Accelerator",
+          position: "right",
+        },
+        {
           href: "https://documentation.magnolia-cms.com/DOCS/",
           label: "Full Docs",
           position: "right",
