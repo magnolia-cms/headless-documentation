@@ -2,8 +2,8 @@
   publish = "build"
   command = "npm run build"
 
-[context.production]
-  command = "mv _redirects build"
-
-[context.deploy-preview]
-  command = "mv _redirects build"
+[[redirects]]
+  from = "/docs/introduction "
+  to = "https://docs.magnolia-cms.com/headless/index.html"
+  status = 301
+  force = true
