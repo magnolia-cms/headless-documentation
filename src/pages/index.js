@@ -72,7 +72,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/introduction')}>
+              to={('https://docs.magnolia-cms.com/headless/index.html')}>
               Get Started
             </Link>
           </div>
