@@ -1,3 +1,9 @@
+[context.production]
+  command = "mv _redirects build"
+
+[context.deploy-preview]
+  command = "mv _redirects build"
+
 [build]
   publish = "build"
-  command = "mv _redirects build; npm run build"
+  command = "npm run build"
