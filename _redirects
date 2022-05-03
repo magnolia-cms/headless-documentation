@@ -1,0 +1,18 @@
+# Redirects from legacy hd site to central magnolia docs site
+/docs/introduction                      https://docs.magnolia-cms.com/headless/index.html
+/docs/getting-started/start             https://docs.magnolia-cms.com/headless/getting-started/start.html
+/docs/getting-started/installation      https://docs.magnolia-cms.com/headless/getting-started/installation.html
+/docs/getting-started/hello-headless    https://docs.magnolia-cms.com/headless/getting-started/hello-headless.html
+/docs/getting-started/hello-spa         https://docs.magnolia-cms.com/headless/getting-started/hello-spa.html
+/docs/concepts/light-development        https://docs.magnolia-cms.com/headless/concepts/light-development.html
+/docs/concepts/yaml-hyper-config        https://docs.magnolia-cms.com/headless/concepts/yaml-hyper-config.html
+/docs/concepts/content-modelling        https://docs.magnolia-cms.com/headless/concepts/content-modelling.html
+/docs/concepts/templating               https://docs.magnolia-cms.com/headless/concepts/templating.html
+/docs/concepts/customization            https://docs.magnolia-cms.com/headless/concepts/customization.html
+/docs/concepts/integration              https://docs.magnolia-cms.com/headless/concepts/integration.html
+/docs/visual-spa-editor                 https://docs.magnolia-cms.com/headless/visual-spa-editor.html
+/docs/jamstack                          https://docs.magnolia-cms.com/headless/jamstack.html
+/docs/content-types                     https://docs.magnolia-cms.com/headless/content-types.html
+/docs/api/delivery                      https://docs.magnolia-cms.com/headless/api/delivery.html
+/api-explorer                           https://docs.magnolia-cms.com/headless/api/delivery/explorer.html
+/docs/api/management                    https://docs.magnolia-cms.com/headless/api/management.html
