@@ -1,6 +1,6 @@
 module.exports = {
   title: "Magnolia Headless Documentation",
-  tagline: "Create tools that content authors and marketers love to use.",
+  tagline: "Magnolia Headless documentation has joined the central Magnolia docs site.",
   url: "https://hd.magnolia-cms.com",
   baseUrl: "/",
   favicon: "img/favicon.ico",
