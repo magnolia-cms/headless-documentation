@@ -2,7 +2,6 @@
   publish = "build"
   command = "npm run build"
 
-# Include _redirects
-[functions]
-  included_files = ["_redirects"]
-  
+[[redirects]]
+  from = "/docs/introduction"
+  to = "https://docs.magnolia-cms.com/headless/index.html"
