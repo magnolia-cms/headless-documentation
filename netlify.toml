@@ -7,3 +7,9 @@
   to = "/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/"
+  to = "https://docs.magnolia-cms.com/headless/index.html"
+  status = 301
+  force = true
