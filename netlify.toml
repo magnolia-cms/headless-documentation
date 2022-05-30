@@ -3,6 +3,12 @@
   command = "npm run build"
 
 [[redirects]]
+  from = "/docs/getting-started/hello-hosted-trial"
+  to = "https://docs.magnolia-cms.com/headless/getting-started/hello-headless.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/docs/*"
   to = "/"
   status = 301
